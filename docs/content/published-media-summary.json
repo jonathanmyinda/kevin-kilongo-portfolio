@@ -1,0 +1,39 @@
+{
+  "mainImages": 82,
+  "responsiveVariants": 45,
+  "publishedImageFiles": 127,
+  "imageBytes": 13105362,
+  "sourceImageBytes": 19750401,
+  "siteSourceIds": [
+    "gallery-002",
+    "gallery-003",
+    "gallery-006",
+    "gallery-007",
+    "gallery-009",
+    "gallery-011",
+    "gallery-014",
+    "gallery-023",
+    "gallery-024",
+    "gallery-025",
+    "gallery-030",
+    "gallery-033",
+    "gallery-034",
+    "gallery-035",
+    "portrait-accueil",
+    "portrait-couleur",
+    "service-conseil",
+    "service-suivi"
+  ],
+  "archivedPdfImages": 74,
+  "contrastRatios": {
+    "ink/surface": 16.23,
+    "muted/surface": 9.89,
+    "muted/surface-raised": 7.83,
+    "accent/surface": 9.58,
+    "night/accent": 10.28,
+    "plan-ink/plan-mat": 9.77
+  },
+  "fontBytes": 40356,
+  "pdfBytes": 9515589,
+  "totalMediaBytesExcludingPdf": 13145718
+}

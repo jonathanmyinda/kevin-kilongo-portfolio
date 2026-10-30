@@ -1,0 +1,23 @@
+[
+  {
+    "localPath": "public/fonts/oswald-latin.woff2",
+    "sourceUrl": "https://fonts.gstatic.com/s/oswald/v57/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYjMdZwl.woff2",
+    "bytes": 21412,
+    "sha256": "9dde3797547520f762f4ba3a822d417a0872b962bc78753a7ee9f955382b6b85",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "localPath": "public/fonts/oswald-latin-ext.woff2",
+    "sourceUrl": "https://fonts.gstatic.com/s/oswald/v57/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjMdZwlou4.woff2",
+    "bytes": 18944,
+    "sha256": "7b6295733e76a64d4e0b61e68a565fac062bfc9a285dfcdee9e20ca0b3a613f5",
+    "license": "SIL Open Font License 1.1"
+  },
+  {
+    "localPath": "public/fonts/OFL-Oswald.txt",
+    "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/oswald/OFL.txt",
+    "bytes": 4483,
+    "sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652",
+    "license": "SIL Open Font License 1.1"
+  }
+]

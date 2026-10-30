@@ -1,0 +1,224 @@
+{
+  "name": "Kevin Kilongo Munganga",
+  "profession": "Architecte",
+  "location": "Kinshasa, RDC",
+  "sourceEdition": 2026,
+  "sourcePages": [
+    3,
+    4,
+    32
+  ],
+  "introduction": "Architecte diplômé de l’ISAU en 2024, Kevin Kilongo Munganga intervient en conception de plans, coordination de projets, supervision de chantiers et contrôle de conformité des ouvrages. Formé à la passation des marchés, il pratique également la gestion des appels d’offres et le suivi contractuel.",
+  "contact": {
+    "email": "kevinkilongo7@gmail.com",
+    "phone": "+243 813 732 058",
+    "address": "4, avenue Demba, Salongo, commune de Lemba — Kinshasa",
+    "sourcePages": [
+      3,
+      32
+    ]
+  },
+  "socials": [
+    {
+      "network": "LinkedIn",
+      "label": "Kevin KILONGO",
+      "url": null
+    },
+    {
+      "network": "Instagram",
+      "label": "Kilongokevin",
+      "url": null
+    },
+    {
+      "network": "TikTok",
+      "label": "Kevin Kilongo",
+      "url": null
+    }
+  ],
+  "portrait": {
+    "src": "/images/profile/kevin-kilongo-munganga-portrait.jpg",
+    "alt": "Portrait de Kevin Kilongo Munganga",
+    "width": 227,
+    "height": 292,
+    "sourcePage": 3,
+    "sourceImage": "X36.jpg",
+    "sourceImageIndex": 0,
+    "credit": null,
+    "bytes": 17110,
+    "sha256": "3428ea3ca9db2401bc359c177834492afd5eba8b778ea0407ea27ddadb67d2cc",
+    "extraction": "embedded-original",
+    "kind": "portrait"
+  },
+  "portfolio": {
+    "src": "/documents/portfolio-kevin-kilongo-munganga.pdf",
+    "downloadName": "portfolio-kevin-kilongo-munganga.pdf",
+    "pages": 32,
+    "edition": 2026,
+    "bytes": 9515589,
+    "sha256": "6ab66c9ad2d55f0a420b42a3889ca6a33e38965b1549204386e27d20330b5350"
+  },
+  "education": [
+    {
+      "qualification": "Diplôme d’architecte",
+      "institution": "ISAU, Kinshasa-Gombe",
+      "start": "2018-10",
+      "end": "2024-12",
+      "year": 2024,
+      "sourcePage": 4
+    },
+    {
+      "qualification": "Passation des marchés",
+      "institution": "Ordre national des Architectes (ONA)",
+      "start": null,
+      "end": null,
+      "year": null,
+      "sourcePage": 4
+    }
+  ],
+  "experiences": [
+    {
+      "organization": "RHOM DESIGN Sarl",
+      "title": "Architecte appointé",
+      "start": "2026-06",
+      "end": null,
+      "ongoingAsOfSource": true,
+      "description": "Coordination de projet, études préliminaires et attachements techniques pour lancer les travaux.",
+      "projectIds": [
+        "project-01",
+        "project-02",
+        "project-03",
+        "project-04"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "organization": "BELLATRIX Tech",
+      "title": "Architecte consultant",
+      "start": "2025-11",
+      "end": null,
+      "ongoingAsOfSource": true,
+      "description": "Supervision et contrôle qualité des chantiers ; conformité aux normes et aux spécifications.",
+      "projectIds": [],
+      "sourcePage": 4
+    },
+    {
+      "organization": "MAK SARL",
+      "title": "Architecte",
+      "start": "2025-03",
+      "end": "2026-03",
+      "ongoingAsOfSource": false,
+      "description": "Rapports quotidiens, documents techniques de suivi, études préliminaires et attachements techniques.",
+      "projectIds": [
+        "project-07",
+        "project-17"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "organization": "Caritas Congo ASBL",
+      "title": "Délégué à pied d’œuvre (DPO)",
+      "start": "2024-07",
+      "end": "2024-08",
+      "ongoingAsOfSource": false,
+      "description": "Suivi technique des travaux de réfection d’un dépôt dans la concession.",
+      "projectIds": [],
+      "sourcePage": 4
+    },
+    {
+      "organization": "Smile Groupe SARLU",
+      "title": "Architecte consultant",
+      "start": "2024-01",
+      "end": null,
+      "ongoingAsOfSource": true,
+      "description": "Utilisation des logiciels de DAO et CAO pour les volumes et designs architecturaux.",
+      "projectIds": [
+        "project-08",
+        "project-12",
+        "project-13"
+      ],
+      "sourcePage": 4
+    }
+  ],
+  "internships": [
+    {
+      "organization": "Arts Rebbel Construction et Immobilier",
+      "context": "Stage académique",
+      "start": "2024-07",
+      "end": "2024-09",
+      "sourcePage": 4
+    },
+    {
+      "organization": "KAO Construction SARL",
+      "context": "Stage académique",
+      "start": "2022-10",
+      "end": "2022-12",
+      "sourcePage": 4
+    }
+  ],
+  "skills": [
+    "Conception de plans",
+    "Coordination de projets",
+    "Supervision de chantiers",
+    "Contrôle de conformité des ouvrages",
+    "Passation des marchés",
+    "Gestion des appels d’offres",
+    "Suivi contractuel",
+    "Formation aux logiciels d’architecture"
+  ],
+  "software": [
+    {
+      "category": "Conception",
+      "tools": [
+        "AutoCAD",
+        "ArchiCAD"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "category": "Modélisation",
+      "tools": [
+        "SketchUp"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "category": "Rendu 3D",
+      "tools": [
+        "Lumion",
+        "D5 Render"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "category": "Image et PAO",
+      "tools": [
+        "Photoshop",
+        "Lightroom",
+        "Illustrator"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "category": "Gestion",
+      "tools": [
+        "MS Project",
+        "Excel"
+      ],
+      "sourcePage": 4
+    },
+    {
+      "category": "Bureautique",
+      "tools": [
+        "Word",
+        "PowerPoint"
+      ],
+      "sourcePage": 4
+    }
+  ],
+  "languages": [
+    "Français",
+    "Anglais",
+    "Lingala",
+    "Kikongo"
+  ]
+}

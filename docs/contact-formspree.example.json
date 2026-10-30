@@ -1,0 +1,15 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Portfolio Kevin Kilongo Munganga",
+      "fields": {
+        "name": { "type": "text", "required": true, "minlength": 2, "maxlength": 100 },
+        "email": { "type": "email", "required": true, "maxlength": 254 },
+        "phone": { "type": "text", "required": false, "maxlength": 40 },
+        "subject": { "type": "text", "required": true, "minlength": 3, "maxlength": 150 },
+        "message": { "type": "text", "required": true, "minlength": 10, "maxlength": 5000 }
+      },
+      "actions": [{ "type": "email", "to": "kevinkilongo7@gmail.com" }]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "downloadedUrlCount": 100,
+  "imageUrlCount": 98,
+  "videoUrlCount": 2,
+  "totalBytes": 45704766,
+  "uniqueBinaryCount": 91,
+  "exactDuplicateUrlCount": 9,
+  "galleryUrlCount": 61,
+  "galleryUniqueBinaryCount": 52,
+  "associationCounts": {
+    "unidentified": 20,
+    "visually-verified": 41,
+    "site-context": 6,
+    "portfolio-archive": 33
+  },
+  "pdfExactByteDuplicateCount": 0,
+  "pdfExactPixelDuplicateCount": 4,
+  "allPrivateFromApplication": true
+}

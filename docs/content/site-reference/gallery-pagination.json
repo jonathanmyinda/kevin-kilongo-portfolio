@@ -1,0 +1,9 @@
+{
+  "firstBatchCount": 50,
+  "secondBatchCount": 11,
+  "hasNextPage": false,
+  "uniqueMediaCount": 61,
+  "images": 59,
+  "videos": 2,
+  "method": "Public infinite-scroll GET, same parameters as source scripts; no browser scrolling claimed."
+}

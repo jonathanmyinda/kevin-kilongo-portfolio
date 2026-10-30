@@ -1,0 +1,21 @@
+[
+  {
+    "sourceUrl": "https://www.linkedin.com/in/kevin-kilongo-778a543a0",
+    "error": "HTTP Error 999: <none>",
+    "resolvedUrl": null
+  },
+  {
+    "sourceUrl": "https://www.instagram.com/kilongokevin/",
+    "status": 200,
+    "resolvedUrl": "https://www.instagram.com/kilongokevin/",
+    "bytes": 698405,
+    "note": "Lecture GET seulement ; identité du titulaire non certifiée."
+  },
+  {
+    "sourceUrl": "https://wa.me/message/6SE5RNJA3PEJM1",
+    "status": 200,
+    "resolvedUrl": "https://api.whatsapp.com/message/6SE5RNJA3PEJM1?autoload=1&app_absent=0",
+    "bytes": 202402,
+    "note": "Lecture GET seulement ; identité du titulaire non certifiée."
+  }
+]

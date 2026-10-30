@@ -1,0 +1,2155 @@
+{
+  "projects": {
+    "project-01": {
+      "images": [
+        {
+          "alt": "RHOM CITY — Rendu 3D de la porte d’entrée de la cité",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 5,
+          "sourceAsset": "/images/rhom-city/rhom-city-p05-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p05-01.webp",
+          "width": 1600,
+          "height": 1131,
+          "bytes": 301894,
+          "sha256": "8bb60816f0a03ba94b24df84718e1706809b90adfd7291ea2e53bfa67032875e",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p05-01.jpg",
+          "sourceSha256": "b3f59d5646f0403f68ee1c1cd157e17c408b41da37f9ad08a32c5896d5a5de05",
+          "originalWidth": 2246,
+          "originalHeight": 1588,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p05-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p05-01.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p05-01-640.webp",
+              "width": 640,
+              "height": 452,
+              "bytes": 83418,
+              "sha256": "6a19344ec29218be6b400e0965ec8db6856c52029901c9f561ba1d7b648447ab"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Vue aérienne du plan de masse",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 6,
+          "sourceAsset": "/images/rhom-city/rhom-city-p06-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p06-01.webp",
+          "width": 1600,
+          "height": 1417,
+          "bytes": 286552,
+          "sha256": "e123cfdab0536953c2450ff527314a73954fefe1165d6fcee16238d240f3eb63",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p06-01.jpg",
+          "sourceSha256": "79707f300b3c137d0a1726a183418685d7b7179738b4d27f59da8dd3dcd7bdee",
+          "originalWidth": 1936,
+          "originalHeight": 1714,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p06-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p06-01.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p06-01-640.webp",
+              "width": 640,
+              "height": 567,
+              "bytes": 97034,
+              "sha256": "35c449043c9eb83d39f53e3f43a2e1a66e61c4238f6b8f74e242f82507cdc200"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Plan de zonage des maisons et duplex",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 7,
+          "sourceAsset": "/images/rhom-city/rhom-city-p07-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p07-01.jpg",
+          "width": 2118,
+          "height": 1669,
+          "bytes": 679821,
+          "sha256": "9f4fc0dc6ba556017588478b116d903224002524a82b6ee3597bb6e4fdc50bae",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p07-01.jpg",
+          "sourceSha256": "9f4fc0dc6ba556017588478b116d903224002524a82b6ee3597bb6e4fdc50bae",
+          "originalWidth": 2118,
+          "originalHeight": 1669,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p07-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p07-01.jpg 2118w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p07-01-640.webp",
+              "width": 640,
+              "height": 504,
+              "bytes": 137984,
+              "sha256": "d9c449de5b47858535862b1b1531216512eaea4b5c7b0eee4cde2babbd003def"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D de la façade principale de la villa type A",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 8,
+          "sourceAsset": "/images/rhom-city/rhom-city-p08-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p08-01.webp",
+          "width": 1297,
+          "height": 773,
+          "bytes": 131418,
+          "sha256": "495acfc854dbab5adaf65029f7087a76f9d5c34d5f7c005e5cbd1f4c1b82bcc6",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p08-01.jpg",
+          "sourceSha256": "2c3c7ea92055a80f6f4fc8b1e76c22ae0aa9f43896ac99c48fd34e48edda1f61",
+          "originalWidth": 1297,
+          "originalHeight": 773,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p08-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p08-01.webp 1297w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p08-01-640.webp",
+              "width": 640,
+              "height": 381,
+              "bytes": 54640,
+              "sha256": "383fe3e471da36c4402228f9029fcdf166f2bf12d049c8569bf9036acf834aab"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Plan de la villa type A",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 8,
+          "sourceAsset": "/images/rhom-city/rhom-city-p08-02.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p08-02.jpg",
+          "width": 967,
+          "height": 721,
+          "bytes": 97450,
+          "sha256": "63536c211707b234d626aea8832906ec4625267490195f7e1f1e3377b481184b",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p08-02.jpg",
+          "sourceSha256": "63536c211707b234d626aea8832906ec4625267490195f7e1f1e3377b481184b",
+          "originalWidth": 967,
+          "originalHeight": 721,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p08-02-640.webp 640w, /images/optimized/rhom-city/rhom-city-p08-02.jpg 967w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p08-02-640.webp",
+              "width": 640,
+              "height": 477,
+              "bytes": 29670,
+              "sha256": "c0e8655be5952aa90aadafbb26aebead5b3554c7fe49a5937e1a2688097b7f90"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D de la rue intérieure",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 8,
+          "sourceAsset": "/images/rhom-city/rhom-city-p08-03.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p08-03.webp",
+          "width": 1297,
+          "height": 798,
+          "bytes": 139696,
+          "sha256": "1e0b28947d797d64bbe4630e3676a88516869afadb447adfdb30126f625318c3",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p08-03.jpg",
+          "sourceSha256": "ff77b7782de97a7f2d2be058f40124faaefe43afe619fcb95b0fbd86b029ab18",
+          "originalWidth": 1297,
+          "originalHeight": 798,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p08-03-640.webp 640w, /images/optimized/rhom-city/rhom-city-p08-03.webp 1297w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p08-03-640.webp",
+              "width": 640,
+              "height": 394,
+              "bytes": 57134,
+              "sha256": "9a3a54a8ac7c897e2159f8e4e0b4adb306f69a0c31e7e06e812ad65bdef50dcd"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D de la façade principale de la villa type B",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 9,
+          "sourceAsset": "/images/rhom-city/rhom-city-p09-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p09-01.webp",
+          "width": 1300,
+          "height": 704,
+          "bytes": 134182,
+          "sha256": "ea3697f8b6c0e5e6317f3ce1252a4c2fc5695a183cc229baac5b8dfb28ab2d67",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p09-01.jpg",
+          "sourceSha256": "dad76631abd3317d7d0119a6190a44b08aa1b94982802f320cdf50585a608d1f",
+          "originalWidth": 1300,
+          "originalHeight": 704,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p09-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p09-01.webp 1300w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p09-01-640.webp",
+              "width": 640,
+              "height": 347,
+              "bytes": 54150,
+              "sha256": "9d1400e14f8bf036577fb9ce33225f9b05fe3387567c02fb9705477365d7f9a1"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Plan de la villa type B",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 9,
+          "sourceAsset": "/images/rhom-city/rhom-city-p09-02.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p09-02.jpg",
+          "width": 1060,
+          "height": 780,
+          "bytes": 108739,
+          "sha256": "09e8e8aa48f211fc04f4303ef64920654fdb1f559b6c3a3012f76111c01c0fc9",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p09-02.jpg",
+          "sourceSha256": "09e8e8aa48f211fc04f4303ef64920654fdb1f559b6c3a3012f76111c01c0fc9",
+          "originalWidth": 1060,
+          "originalHeight": 780,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p09-02-640.webp 640w, /images/optimized/rhom-city/rhom-city-p09-02.jpg 1060w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p09-02-640.webp",
+              "width": 640,
+              "height": 471,
+              "bytes": 27314,
+              "sha256": "b0caec0a56dc0c0700990f352fff1be05b4ff4056d30905a19bf86447dfadd24"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D de la rue intérieure",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 9,
+          "sourceAsset": "/images/rhom-city/rhom-city-p09-03.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p09-03.webp",
+          "width": 1302,
+          "height": 803,
+          "bytes": 127462,
+          "sha256": "614dbb1bcab2e68fab920e02846df4d94ab87740f3e14950c5f30f8d391ac325",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p09-03.jpg",
+          "sourceSha256": "8744510e8454d8cba51f5cada288c364e4bc34ae855d11c12144b12d35d92af9",
+          "originalWidth": 1302,
+          "originalHeight": 803,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p09-03-640.webp 640w, /images/optimized/rhom-city/rhom-city-p09-03.webp 1302w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p09-03-640.webp",
+              "width": 640,
+              "height": 395,
+              "bytes": 52888,
+              "sha256": "2cacc21701fbea6dc83acd2437903c0ee712f44594d4679a91e6667651676720"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D d’angle du duplex type A",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 10,
+          "sourceAsset": "/images/rhom-city/rhom-city-p10-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p10-01.webp",
+          "width": 1329,
+          "height": 797,
+          "bytes": 117624,
+          "sha256": "cc91eb42a74bf04a40898d9a53858c6abc3ea5b3d969cf712d6e5d245625a59b",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p10-01.jpg",
+          "sourceSha256": "b4e13666d9fd8c60e0244794748367e5958468a6f7a037a0cc2227ac1e1fdbd0",
+          "originalWidth": 1329,
+          "originalHeight": 797,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p10-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p10-01.webp 1329w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p10-01-640.webp",
+              "width": 640,
+              "height": 384,
+              "bytes": 47286,
+              "sha256": "3f68e379f7feee3a7669afd38a2743518942596a7a122784a166d0233807df10"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D de l’allée intérieure",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 10,
+          "sourceAsset": "/images/rhom-city/rhom-city-p10-02.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p10-02.webp",
+          "width": 1329,
+          "height": 823,
+          "bytes": 64896,
+          "sha256": "c02ae88165f32d0253b4d35fcb8076d6c5b575f35e10c3bcfb46ee515aaad260",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p10-02.jpg",
+          "sourceSha256": "0a26354eee657bfa759d5f522b1c5a02a555e0f744a4ef0f57f99b0da2564767",
+          "originalWidth": 1329,
+          "originalHeight": 823,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p10-02-640.webp 640w, /images/optimized/rhom-city/rhom-city-p10-02.webp 1329w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p10-02-640.webp",
+              "width": 640,
+              "height": 396,
+              "bytes": 26964,
+              "sha256": "b22f6dcc331bb0b6da8d8eb3602599bed654425ed8f52254bc989eb66ea71f12"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Plan du rez-de-chaussée du duplex type A",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 10,
+          "sourceAsset": "/images/rhom-city/rhom-city-p10-03.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p10-03.jpg",
+          "width": 961,
+          "height": 736,
+          "bytes": 102788,
+          "sha256": "b07fd6a57b7d182caeaa1ffca16c231e8a2d3ea191cef6f85e6e004e0428f0ab",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p10-03.jpg",
+          "sourceSha256": "b07fd6a57b7d182caeaa1ffca16c231e8a2d3ea191cef6f85e6e004e0428f0ab",
+          "originalWidth": 961,
+          "originalHeight": 736,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p10-03-640.webp 640w, /images/optimized/rhom-city/rhom-city-p10-03.jpg 961w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p10-03-640.webp",
+              "width": 640,
+              "height": 490,
+              "bytes": 31564,
+              "sha256": "f4352382f9a54f17a9a816208fb8fee3b504893e1eda30a331da68a726a9d1e4"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Plan de l’étage du duplex type A",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 10,
+          "sourceAsset": "/images/rhom-city/rhom-city-p10-04.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p10-04.jpg",
+          "width": 548,
+          "height": 562,
+          "bytes": 63737,
+          "sha256": "558aed04b28396a8ea4e270b13fc4531be3233d6f1a3c6684b58d53878ce8b61",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p10-04.jpg",
+          "sourceSha256": "558aed04b28396a8ea4e270b13fc4531be3233d6f1a3c6684b58d53878ce8b61",
+          "originalWidth": 548,
+          "originalHeight": 562,
+          "variants": []
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D d’angle du duplex type C",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 11,
+          "sourceAsset": "/images/rhom-city/rhom-city-p11-01.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p11-01.webp",
+          "width": 1329,
+          "height": 797,
+          "bytes": 131590,
+          "sha256": "c3fa48c7da53daff18a85bda8598d01b5f3b1380c809a895ec0f239182fc848f",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p11-01.jpg",
+          "sourceSha256": "f0aeb32c87daef8f32de68404fff64f60ef7dd52ea2030093f260fb11c6d1c3a",
+          "originalWidth": 1329,
+          "originalHeight": 797,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p11-01-640.webp 640w, /images/optimized/rhom-city/rhom-city-p11-01.webp 1329w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p11-01-640.webp",
+              "width": 640,
+              "height": 384,
+              "bytes": 54952,
+              "sha256": "8e029bfde9732cc73d5278d1307c835f8edef2027034229048a299d754d2ecdc"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Rendu 3D de l’allée intérieure",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 11,
+          "sourceAsset": "/images/rhom-city/rhom-city-p11-02.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p11-02.webp",
+          "width": 1329,
+          "height": 823,
+          "bytes": 81604,
+          "sha256": "7e3086e61a4f842ec56b75d956770bedcd27aa3e05da4084f4bdf5e2032f9f9d",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p11-02.jpg",
+          "sourceSha256": "205e7ce01e245b68ec27ae818bd69394a302fda742db37a94d489aea0788657b",
+          "originalWidth": 1329,
+          "originalHeight": 823,
+          "srcSet": "/images/optimized/rhom-city/rhom-city-p11-02-640.webp 640w, /images/optimized/rhom-city/rhom-city-p11-02.webp 1329w",
+          "variants": [
+            {
+              "src": "/images/optimized/rhom-city/rhom-city-p11-02-640.webp",
+              "width": 640,
+              "height": 396,
+              "bytes": 33442,
+              "sha256": "406f4de795756657de4a0fc4e8f8adb43f89162cba62791028a098fdc5703c1c"
+            }
+          ]
+        },
+        {
+          "alt": "RHOM CITY — Plan du rez-de-chaussée du duplex type C",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 11,
+          "sourceAsset": "/images/rhom-city/rhom-city-p11-03.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p11-03.jpg",
+          "width": 778,
+          "height": 878,
+          "bytes": 96711,
+          "sha256": "a6176987215ea304f8d57cd1f1efc505f1180fafd6810446cb011bbf5a18fbce",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p11-03.jpg",
+          "sourceSha256": "a6176987215ea304f8d57cd1f1efc505f1180fafd6810446cb011bbf5a18fbce",
+          "originalWidth": 778,
+          "originalHeight": 878,
+          "variants": []
+        },
+        {
+          "alt": "RHOM CITY — Plan de l’étage du duplex type C",
+          "kind": "drawing",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 11,
+          "sourceAsset": "/images/rhom-city/rhom-city-p11-04.jpg",
+          "src": "/images/optimized/rhom-city/rhom-city-p11-04.jpg",
+          "width": 513,
+          "height": 657,
+          "bytes": 68571,
+          "sha256": "eb5b6189a85b5623e1a2a0fd1db6d9b4ce8beaed9e9ac0a011d65731c27d3e4d",
+          "sourceLocalPath": "docs/content/pdf-media-originals/rhom-city/rhom-city-p11-04.jpg",
+          "sourceSha256": "eb5b6189a85b5623e1a2a0fd1db6d9b4ce8beaed9e9ac0a011d65731c27d3e4d",
+          "originalWidth": 513,
+          "originalHeight": 657,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/rhom-city/rhom-city-p05-01.webp"
+    },
+    "project-02": {
+      "images": [
+        {
+          "alt": "KIMIA TOWER — Perspective 3D de la façade sur rue, de jour",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-034",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a53392435291.jpg",
+          "referencePdfPages": [
+            12
+          ],
+          "src": "/images/optimized/kimia-tower/kimia-tower-gallery-034.webp",
+          "width": 1495,
+          "height": 1052,
+          "bytes": 242814,
+          "sha256": "855b9e917ab64852dc8b502269769f38d8aa1e16881e311eaebcd2c9ce3db10a",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/kimia-tower/2000_6a53392435291.jpg",
+          "sourceSha256": "2da237938c8d25b1b68291fb3cd602a7ea49d5a3d4ea3cdea348ab0e284780fe",
+          "originalWidth": 1495,
+          "originalHeight": 1052,
+          "srcSet": "/images/optimized/kimia-tower/kimia-tower-gallery-034-640.webp 640w, /images/optimized/kimia-tower/kimia-tower-gallery-034.webp 1495w",
+          "variants": [
+            {
+              "src": "/images/optimized/kimia-tower/kimia-tower-gallery-034-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 64616,
+              "sha256": "73d699c906286df082d6b16f36ab2f54b5a3cae3cd38515b2429958d64ed5efd"
+            }
+          ]
+        },
+        {
+          "alt": "KIMIA TOWER — Perspective 3D d’ensemble de jour",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-033",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a5339243084c.jpg",
+          "referencePdfPages": [
+            12
+          ],
+          "src": "/images/optimized/kimia-tower/kimia-tower-gallery-033.webp",
+          "width": 1495,
+          "height": 1052,
+          "bytes": 314830,
+          "sha256": "15411e81e15f365904562e2e158692258333f683599ea9c64d5953bfa0fba398",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/kimia-tower/2000_6a5339243084c.jpg",
+          "sourceSha256": "68e33227d0ce2184bbab2d504e029a645c019f90548fe992de39a709586f9e16",
+          "originalWidth": 1495,
+          "originalHeight": 1052,
+          "srcSet": "/images/optimized/kimia-tower/kimia-tower-gallery-033-640.webp 640w, /images/optimized/kimia-tower/kimia-tower-gallery-033.webp 1495w",
+          "variants": [
+            {
+              "src": "/images/optimized/kimia-tower/kimia-tower-gallery-033-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 77682,
+              "sha256": "99603ef7b2030428a38a10b9f8a4143a5c0ad1ea01084a1558961ca74c49f56e"
+            }
+          ]
+        },
+        {
+          "alt": "KIMIA TOWER — Perspective 3D d’ensemble de nuit",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-035",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a53392433f33.jpg",
+          "referencePdfPages": [
+            12
+          ],
+          "src": "/images/optimized/kimia-tower/kimia-tower-gallery-035.webp",
+          "width": 1495,
+          "height": 1052,
+          "bytes": 266712,
+          "sha256": "f44576442d16ad0b69a0e1db6488aabbcdf8fffab2cb65bf2691a1aeeb587d23",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/kimia-tower/2000_6a53392433f33.jpg",
+          "sourceSha256": "fdfed8551f94065ef11fbcbd88133059e2befc9d63df2ae2de53eaa61b24e8ec",
+          "originalWidth": 1495,
+          "originalHeight": 1052,
+          "srcSet": "/images/optimized/kimia-tower/kimia-tower-gallery-035-640.webp 640w, /images/optimized/kimia-tower/kimia-tower-gallery-035.webp 1495w",
+          "variants": [
+            {
+              "src": "/images/optimized/kimia-tower/kimia-tower-gallery-035-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 67460,
+              "sha256": "68c9f7c4727d8a20de0f4e37b9af211bd4495d3ed4094a3672f4d3aecf6047a7"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/kimia-tower/kimia-tower-gallery-034.webp"
+    },
+    "project-03": {
+      "images": [
+        {
+          "alt": "Immeuble mixte — Perspective 3D d’angle",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 13,
+          "sourceAsset": "/images/immeuble-mixte/immeuble-mixte-p13-01.jpg",
+          "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-01.webp",
+          "width": 1280,
+          "height": 900,
+          "bytes": 263686,
+          "sha256": "cf32faa93ab8a1ca985807260be6ae1b57e6ed95a33f345688c763de3ade21d4",
+          "sourceLocalPath": "docs/content/pdf-media-originals/immeuble-mixte/immeuble-mixte-p13-01.jpg",
+          "sourceSha256": "b8ad2dd0231b54d4324129fd5a0a7a0300a67efd666b3f733248d1736cf70836",
+          "originalWidth": 1280,
+          "originalHeight": 900,
+          "srcSet": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-01-640.webp 640w, /images/optimized/immeuble-mixte/immeuble-mixte-p13-01.webp 1280w",
+          "variants": [
+            {
+              "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-01-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 82556,
+              "sha256": "c7f729bd31a8754611a511b480fe25810b1be461612f0c87ecb1e9a8799c9fc8"
+            }
+          ]
+        },
+        {
+          "alt": "Immeuble mixte — Perspective 3D des accès et du portail",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 13,
+          "sourceAsset": "/images/immeuble-mixte/immeuble-mixte-p13-02.jpg",
+          "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-02.webp",
+          "width": 1280,
+          "height": 900,
+          "bytes": 232932,
+          "sha256": "2fae8d344d570615d27e28a3d7da46cf656dee37657ff5d1ce85aa8b62e73832",
+          "sourceLocalPath": "docs/content/pdf-media-originals/immeuble-mixte/immeuble-mixte-p13-02.jpg",
+          "sourceSha256": "227aac053cd10389106053eec73ca8831e5b4e2d5f3193619eccca03e845688c",
+          "originalWidth": 1280,
+          "originalHeight": 900,
+          "srcSet": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-02-640.webp 640w, /images/optimized/immeuble-mixte/immeuble-mixte-p13-02.webp 1280w",
+          "variants": [
+            {
+              "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-02-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 73812,
+              "sha256": "fb84353485ba07a171e9c2bd0abe2c6c4a95d4d1c2e9e47b918afc651d7e34f4"
+            }
+          ]
+        },
+        {
+          "alt": "Immeuble mixte — Perspective 3D depuis la rue",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 13,
+          "sourceAsset": "/images/immeuble-mixte/immeuble-mixte-p13-03.jpg",
+          "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-03.webp",
+          "width": 1280,
+          "height": 900,
+          "bytes": 240416,
+          "sha256": "a5d0cfcba183ca80ade3a622ba17364f713070525f831aab2ba67fd91294b1e6",
+          "sourceLocalPath": "docs/content/pdf-media-originals/immeuble-mixte/immeuble-mixte-p13-03.jpg",
+          "sourceSha256": "6607b86dc09e2a003e6df6224ea2dfe1a80d5e64a2152c159d257ae19ff76138",
+          "originalWidth": 1280,
+          "originalHeight": 900,
+          "srcSet": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-03-640.webp 640w, /images/optimized/immeuble-mixte/immeuble-mixte-p13-03.webp 1280w",
+          "variants": [
+            {
+              "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-03-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 80072,
+              "sha256": "fe2c09005937969f37cc4d741e2af31ccdf1b08def66c879a8bcb4116a0443c2"
+            }
+          ]
+        },
+        {
+          "alt": "Immeuble mixte — Perspective 3D de la façade principale",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 14,
+          "sourceAsset": "/images/immeuble-mixte/immeuble-mixte-p14-01.jpg",
+          "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p14-01.webp",
+          "width": 1241,
+          "height": 886,
+          "bytes": 190604,
+          "sha256": "7bec634ce26f0b43b72850b82629e569e87984897d7b9b98b5ba0f4e28d627cc",
+          "sourceLocalPath": "docs/content/pdf-media-originals/immeuble-mixte/immeuble-mixte-p14-01.jpg",
+          "sourceSha256": "088071c748598d84b7dc2a3b314cb665598bdea569345b05ef7ce685076faecb",
+          "originalWidth": 1241,
+          "originalHeight": 886,
+          "srcSet": "/images/optimized/immeuble-mixte/immeuble-mixte-p14-01-640.webp 640w, /images/optimized/immeuble-mixte/immeuble-mixte-p14-01.webp 1241w",
+          "variants": [
+            {
+              "src": "/images/optimized/immeuble-mixte/immeuble-mixte-p14-01-640.webp",
+              "width": 640,
+              "height": 457,
+              "bytes": 67540,
+              "sha256": "690c5c7dae586b3e093605abfae438421e7dc833424a0b9f76d3af73d8f07e86"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/immeuble-mixte/immeuble-mixte-p13-01.webp"
+    },
+    "project-04": {
+      "images": [
+        {
+          "alt": "Architecture intérieure — Rendu 3D de la salle à manger et du séjour",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 15,
+          "sourceAsset": "/images/architecture-interieure/architecture-interieure-p15-01.jpg",
+          "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-01.webp",
+          "width": 1280,
+          "height": 900,
+          "bytes": 96526,
+          "sha256": "2d8737f6b73acf5fa9c5a8eebe8eb5a7371cccb2071ac37fd913db6122958b91",
+          "sourceLocalPath": "docs/content/pdf-media-originals/architecture-interieure/architecture-interieure-p15-01.jpg",
+          "sourceSha256": "56b82c663ebaf095a5a4d775530e02bbcfcbada68c6cf4478fdb90a76fe4751b",
+          "originalWidth": 1280,
+          "originalHeight": 900,
+          "srcSet": "/images/optimized/architecture-interieure/architecture-interieure-p15-01-640.webp 640w, /images/optimized/architecture-interieure/architecture-interieure-p15-01.webp 1280w",
+          "variants": [
+            {
+              "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-01-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 38458,
+              "sha256": "9e05375ca993287a2847ce9b7cf522d06e9138330edeac39083d722ff763af2e"
+            }
+          ]
+        },
+        {
+          "alt": "Architecture intérieure — Rendu 3D du bureau de direction",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 15,
+          "sourceAsset": "/images/architecture-interieure/architecture-interieure-p15-02.jpg",
+          "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-02.webp",
+          "width": 1080,
+          "height": 760,
+          "bytes": 78210,
+          "sha256": "50ce155a0a09c53730a424dc1a0c662e643f964e7db4896cd265037eb0aa0933",
+          "sourceLocalPath": "docs/content/pdf-media-originals/architecture-interieure/architecture-interieure-p15-02.jpg",
+          "sourceSha256": "387517b69e90d2a2356115d70a93e524a48c0e579e516cab766669752cb15c71",
+          "originalWidth": 1080,
+          "originalHeight": 760,
+          "srcSet": "/images/optimized/architecture-interieure/architecture-interieure-p15-02-640.webp 640w, /images/optimized/architecture-interieure/architecture-interieure-p15-02.webp 1080w",
+          "variants": [
+            {
+              "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-02-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 36720,
+              "sha256": "0e43b18fb95bf82a658f9919330d2307727a49abc765a7724e7f4f0c49200f66"
+            }
+          ]
+        },
+        {
+          "alt": "Architecture intérieure — Rendu 3D de l’espace de travail",
+          "kind": "render-3d",
+          "credit": "RHOM DESIGN Sarl",
+          "sourceKind": "pdf",
+          "sourcePage": 15,
+          "sourceAsset": "/images/architecture-interieure/architecture-interieure-p15-03.jpg",
+          "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-03.webp",
+          "width": 1080,
+          "height": 760,
+          "bytes": 82874,
+          "sha256": "eaf311cbd8ea40edcc8e36790dff3375a6d5aef5c5f3826244ed1c358247b378",
+          "sourceLocalPath": "docs/content/pdf-media-originals/architecture-interieure/architecture-interieure-p15-03.jpg",
+          "sourceSha256": "e43c8b9659f0f2f86e3b2d3267f4d0d4beddfbdd942d04e8368cacca10deeb25",
+          "originalWidth": 1080,
+          "originalHeight": 760,
+          "srcSet": "/images/optimized/architecture-interieure/architecture-interieure-p15-03-640.webp 640w, /images/optimized/architecture-interieure/architecture-interieure-p15-03.webp 1080w",
+          "variants": [
+            {
+              "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-03-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 36150,
+              "sha256": "bba21d03ed4f66d420a88663cb4ec2e884d045d8334387ad1f3fed7c1aa8bdb1"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/architecture-interieure/architecture-interieure-p15-01.webp"
+    },
+    "project-05": {
+      "images": [
+        {
+          "alt": "Centre oncologique de Kinshasa — Rendu 3D de la façade d’entrée",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 16,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-01.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-01.jpg",
+          "width": 628,
+          "height": 371,
+          "bytes": 31408,
+          "sha256": "7b91d51ef53580bb208eb5569548f35bf28462e7674a931a26aa36b2058e5d9b",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-01.jpg",
+          "sourceSha256": "7b91d51ef53580bb208eb5569548f35bf28462e7674a931a26aa36b2058e5d9b",
+          "originalWidth": 628,
+          "originalHeight": 371,
+          "variants": []
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Rendu 3D du parvis",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 16,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-02.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-02.jpg",
+          "width": 628,
+          "height": 362,
+          "bytes": 29150,
+          "sha256": "fa1e531893f8d47f7d723e56f818e5696e89ae0686d5b86315fc859c841c4065",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-02.jpg",
+          "sourceSha256": "fa1e531893f8d47f7d723e56f818e5696e89ae0686d5b86315fc859c841c4065",
+          "originalWidth": 628,
+          "originalHeight": 362,
+          "variants": []
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Rendu 3D des jardins",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 16,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-03.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-03.jpg",
+          "width": 628,
+          "height": 395,
+          "bytes": 33376,
+          "sha256": "c08c0cbb0fad147d601ee5398c04f6af092cabd165ff3aad8ac38d48b3fcab4c",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p16-03.jpg",
+          "sourceSha256": "c08c0cbb0fad147d601ee5398c04f6af092cabd165ff3aad8ac38d48b3fcab4c",
+          "originalWidth": 628,
+          "originalHeight": 395,
+          "variants": []
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Plan de situation à N’sele",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 17,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-01.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-01.jpg",
+          "width": 1456,
+          "height": 667,
+          "bytes": 162641,
+          "sha256": "d0a9df1830759beb03abba36505c9dd7a5f34d5c055dcb9f3d66c466adf25dfa",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-01.jpg",
+          "sourceSha256": "d0a9df1830759beb03abba36505c9dd7a5f34d5c055dcb9f3d66c466adf25dfa",
+          "originalWidth": 1456,
+          "originalHeight": 667,
+          "srcSet": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-01-640.webp 640w, /images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-01.jpg 1456w",
+          "variants": [
+            {
+              "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-01-640.webp",
+              "width": 640,
+              "height": 293,
+              "bytes": 35022,
+              "sha256": "a5b089be1d29c68885cd81e3cedd7636956db9db0cc24bc3b403832443c0c4ab"
+            }
+          ]
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Coupes du centre oncologique",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 17,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-02.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-02.jpg",
+          "width": 1327,
+          "height": 660,
+          "bytes": 171455,
+          "sha256": "795998880f568062a37631308189e4f5954b6d3e7250350b38bde2ee51796f11",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-02.jpg",
+          "sourceSha256": "795998880f568062a37631308189e4f5954b6d3e7250350b38bde2ee51796f11",
+          "originalWidth": 1327,
+          "originalHeight": 660,
+          "srcSet": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-02-640.webp 640w, /images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-02.jpg 1327w",
+          "variants": [
+            {
+              "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-02-640.webp",
+              "width": 640,
+              "height": 318,
+              "bytes": 34964,
+              "sha256": "2f54ad8df14e15489842d41ca9939778360e4032827572296e2b62d7ae46c1b8"
+            }
+          ]
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Dessin de la façade principale",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 17,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-03.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-03.jpg",
+          "width": 1420,
+          "height": 157,
+          "bytes": 80004,
+          "sha256": "4e0b9f5d707b85dc1393f1f0477e2f46794d4933da12f802309c5095ab1e1918",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-03.jpg",
+          "sourceSha256": "4e0b9f5d707b85dc1393f1f0477e2f46794d4933da12f802309c5095ab1e1918",
+          "originalWidth": 1420,
+          "originalHeight": 157,
+          "srcSet": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-03-640.webp 640w, /images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-03.jpg 1420w",
+          "variants": [
+            {
+              "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-03-640.webp",
+              "width": 640,
+              "height": 71,
+              "bytes": 13994,
+              "sha256": "e4bb1cea20ea5e5543fed52098acf9490c38fbf59d47d66ca7013be98fc8a516"
+            }
+          ]
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Dessins des façades latérales",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 17,
+          "sourceAsset": "/images/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-04.jpg",
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-04.jpg",
+          "width": 1434,
+          "height": 544,
+          "bytes": 150557,
+          "sha256": "f999807f686df127d84f7728313869fa98e9f3bb7237923bde5a5926cb47a58d",
+          "sourceLocalPath": "docs/content/pdf-media-originals/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-04.jpg",
+          "sourceSha256": "f999807f686df127d84f7728313869fa98e9f3bb7237923bde5a5926cb47a58d",
+          "originalWidth": 1434,
+          "originalHeight": 544,
+          "srcSet": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-04-640.webp 640w, /images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-04.jpg 1434w",
+          "variants": [
+            {
+              "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-p17-04-640.webp",
+              "width": 640,
+              "height": 243,
+              "bytes": 25794,
+              "sha256": "35fc86343b3de1a686d5157696661b460c2bf5251dac8a3a5db2c8f4afd4177c"
+            }
+          ]
+        },
+        {
+          "alt": "Centre oncologique de Kinshasa — Rendu 3D des jardins du centre oncologique",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-030",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3d691a2a87d.jpg",
+          "referencePdfPages": [
+            16,
+            17
+          ],
+          "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-gallery-030.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 321874,
+          "sha256": "7971142af70d966217142ec676a15d0b74da2d094e390edade0c7143f4b054fa",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/centre-oncologique-kinshasa/2000_6a3d691a2a87d.jpg",
+          "sourceSha256": "895529fdd1e5df5abac82a599a6abf76ca04aeee5cb1b94334a08243eff62309",
+          "originalWidth": 1920,
+          "originalHeight": 1080,
+          "srcSet": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-gallery-030-640.webp 640w, /images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-gallery-030.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-gallery-030-640.webp",
+              "width": 640,
+              "height": 360,
+              "bytes": 63160,
+              "sha256": "ffcc5fdd7d21c26f44b44b82ec4f74d8a900b1560e797c418dfdb6f475164481"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/centre-oncologique-kinshasa/centre-oncologique-kinshasa-gallery-030.webp"
+    },
+    "project-06": {
+      "images": [
+        {
+          "alt": "Résidence unifamiliale, Kolwezi — Rendu 3D extérieur de la résidence",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 18,
+          "sourceAsset": "/images/residence-kolwezi/residence-kolwezi-p18-01.jpg",
+          "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-01.jpg",
+          "width": 512,
+          "height": 360,
+          "bytes": 36650,
+          "sha256": "c376b4b0b20ff64deb9d38bb36f22a1bed5b4311f7ac4a9bed87a278e9f120d8",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-kolwezi/residence-kolwezi-p18-01.jpg",
+          "sourceSha256": "c376b4b0b20ff64deb9d38bb36f22a1bed5b4311f7ac4a9bed87a278e9f120d8",
+          "originalWidth": 512,
+          "originalHeight": 360,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Kolwezi — Plan d’aménagement et d’éclairage",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 18,
+          "sourceAsset": "/images/residence-kolwezi/residence-kolwezi-p18-02.jpg",
+          "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-02.jpg",
+          "width": 1115,
+          "height": 1210,
+          "bytes": 160960,
+          "sha256": "77a325aeeeeab14e48559b31c7b1992895b15cc5de63dc130ba7829ff94f2b40",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-kolwezi/residence-kolwezi-p18-02.jpg",
+          "sourceSha256": "77a325aeeeeab14e48559b31c7b1992895b15cc5de63dc130ba7829ff94f2b40",
+          "originalWidth": 1115,
+          "originalHeight": 1210,
+          "srcSet": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-02-640.webp 640w, /images/optimized/residence-kolwezi/residence-kolwezi-p18-02.jpg 1115w",
+          "variants": [
+            {
+              "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-02-640.webp",
+              "width": 640,
+              "height": 695,
+              "bytes": 36028,
+              "sha256": "0ee3c4732cb00bcc1636fcad53c717e20d9c9bfda8caba43bde5208fcdef8786"
+            }
+          ]
+        },
+        {
+          "alt": "Résidence unifamiliale, Kolwezi — Rendu 3D extérieur de la résidence",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 18,
+          "sourceAsset": "/images/residence-kolwezi/residence-kolwezi-p18-03.jpg",
+          "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-03.jpg",
+          "width": 512,
+          "height": 360,
+          "bytes": 35986,
+          "sha256": "32ce9d3591bb8d1c035d20fdd777390744acd8246ff07a63befa2e0745f5933d",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-kolwezi/residence-kolwezi-p18-03.jpg",
+          "sourceSha256": "32ce9d3591bb8d1c035d20fdd777390744acd8246ff07a63befa2e0745f5933d",
+          "originalWidth": 512,
+          "originalHeight": 360,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Kolwezi — Rendu 3D de la terrasse",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 18,
+          "sourceAsset": "/images/residence-kolwezi/residence-kolwezi-p18-04.jpg",
+          "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-04.jpg",
+          "width": 487,
+          "height": 345,
+          "bytes": 27955,
+          "sha256": "54af482ab8dd591487b3931cd0e42f195f5c55d928d24fd926a073a85f9c4be9",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-kolwezi/residence-kolwezi-p18-04.jpg",
+          "sourceSha256": "54af482ab8dd591487b3931cd0e42f195f5c55d928d24fd926a073a85f9c4be9",
+          "originalWidth": 487,
+          "originalHeight": 345,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Kolwezi — Dessin de façade",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 18,
+          "sourceAsset": "/images/residence-kolwezi/residence-kolwezi-p18-05.jpg",
+          "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-05.jpg",
+          "width": 450,
+          "height": 200,
+          "bytes": 14896,
+          "sha256": "39e1e25c7736f20bdf788053a5d817b92f7a77800d7b480cb92905bd7cac1101",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-kolwezi/residence-kolwezi-p18-05.jpg",
+          "sourceSha256": "39e1e25c7736f20bdf788053a5d817b92f7a77800d7b480cb92905bd7cac1101",
+          "originalWidth": 450,
+          "originalHeight": 200,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Kolwezi — Dessin de façade",
+          "kind": "drawing",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 18,
+          "sourceAsset": "/images/residence-kolwezi/residence-kolwezi-p18-06.jpg",
+          "src": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-06.jpg",
+          "width": 398,
+          "height": 218,
+          "bytes": 8895,
+          "sha256": "92a4eedffa752913f8ee010a5e440df1fa0f6850b32586e5aa850e2bd14e1765",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-kolwezi/residence-kolwezi-p18-06.jpg",
+          "sourceSha256": "92a4eedffa752913f8ee010a5e440df1fa0f6850b32586e5aa850e2bd14e1765",
+          "originalWidth": 398,
+          "originalHeight": 218,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/residence-kolwezi/residence-kolwezi-p18-01.jpg"
+    },
+    "project-07": {
+      "images": [
+        {
+          "alt": "Immeuble Horizon Luxe — Perspective 3D d’ensemble de l’immeuble",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-009",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c9996c59ed.jpg",
+          "referencePdfPages": [
+            19
+          ],
+          "src": "/images/optimized/horizon-luxe/horizon-luxe-gallery-009.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 249650,
+          "sha256": "04cab2e65fa267bb37eef41876722820b509da5b95041257f3d122936bb0a66c",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/horizon-luxe/2000_6a3c9996c59ed.jpg",
+          "sourceSha256": "1d99b9eaa1e120c3f664b8ac72bebfd4c141ff7e0617c0a2b1d9acb50899004c",
+          "originalWidth": 1920,
+          "originalHeight": 1080,
+          "srcSet": "/images/optimized/horizon-luxe/horizon-luxe-gallery-009-640.webp 640w, /images/optimized/horizon-luxe/horizon-luxe-gallery-009.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/horizon-luxe/horizon-luxe-gallery-009-640.webp",
+              "width": 640,
+              "height": 360,
+              "bytes": 50296,
+              "sha256": "56abef064c6355d795093ac8193912055c0b901002edfe4d02324832f34d40c3"
+            }
+          ]
+        },
+        {
+          "alt": "Immeuble Horizon Luxe — Perspective 3D de l’immeuble",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 19,
+          "sourceAsset": "/images/horizon-luxe/horizon-luxe-p19-02.jpg",
+          "src": "/images/optimized/horizon-luxe/horizon-luxe-p19-02.jpg",
+          "width": 900,
+          "height": 547,
+          "bytes": 73162,
+          "sha256": "36ed341a22b771cb0beb831d910fc2b34776dedb02738eeef36e297bd45ea63c",
+          "sourceLocalPath": "docs/content/pdf-media-originals/horizon-luxe/horizon-luxe-p19-02.jpg",
+          "sourceSha256": "36ed341a22b771cb0beb831d910fc2b34776dedb02738eeef36e297bd45ea63c",
+          "originalWidth": 900,
+          "originalHeight": 547,
+          "variants": []
+        },
+        {
+          "alt": "Immeuble Horizon Luxe — Perspective 3D de l’entrée et du portail",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-014",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c9b376f217.jpg",
+          "referencePdfPages": [
+            19
+          ],
+          "src": "/images/optimized/horizon-luxe/horizon-luxe-gallery-014.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 380860,
+          "sha256": "2d02e474a293f9310bdae870700e1131042bca4f4993acbf2917ff18458c0f1a",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/horizon-luxe/2000_6a3c9b376f217.jpg",
+          "sourceSha256": "4f69b5b5183fdb1389bf6bf130e7ba505508a0fb6bd9afee7d0f4914305fd0b2",
+          "originalWidth": 1920,
+          "originalHeight": 1080,
+          "srcSet": "/images/optimized/horizon-luxe/horizon-luxe-gallery-014-640.webp 640w, /images/optimized/horizon-luxe/horizon-luxe-gallery-014.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/horizon-luxe/horizon-luxe-gallery-014-640.webp",
+              "width": 640,
+              "height": 360,
+              "bytes": 67522,
+              "sha256": "af7753fce85280e36e43958a39d9f3187568b1c0e15a4a0f6a7914b2c8e45936"
+            }
+          ]
+        },
+        {
+          "alt": "Immeuble Horizon Luxe — Perspective 3D d’angle",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 19,
+          "sourceAsset": "/images/horizon-luxe/horizon-luxe-p19-04.jpg",
+          "src": "/images/optimized/horizon-luxe/horizon-luxe-p19-04.jpg",
+          "width": 418,
+          "height": 255,
+          "bytes": 19247,
+          "sha256": "25c8f9225af56bb3689f129f08cb4314c99ce89ed0d24cd438edcd19c0240751",
+          "sourceLocalPath": "docs/content/pdf-media-originals/horizon-luxe/horizon-luxe-p19-04.jpg",
+          "sourceSha256": "25c8f9225af56bb3689f129f08cb4314c99ce89ed0d24cd438edcd19c0240751",
+          "originalWidth": 418,
+          "originalHeight": 255,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/horizon-luxe/horizon-luxe-gallery-009.webp"
+    },
+    "project-08": {
+      "images": [
+        {
+          "alt": "Résidence unifamiliale, Bandalungwa — Rendu 3D de la façade principale",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "pdf",
+          "sourcePage": 20,
+          "sourceAsset": "/images/residence-bandalungwa/residence-bandalungwa-p20-01.jpg",
+          "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-p20-01.jpg",
+          "width": 881,
+          "height": 578,
+          "bytes": 63187,
+          "sha256": "de1d9e96ee7ce4f7460a9e69d0d22a5edae1d48cebda720a5cd151ec3c704aef",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-bandalungwa/residence-bandalungwa-p20-01.jpg",
+          "sourceSha256": "de1d9e96ee7ce4f7460a9e69d0d22a5edae1d48cebda720a5cd151ec3c704aef",
+          "originalWidth": 881,
+          "originalHeight": 578,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Bandalungwa — Rendu 3D de la résidence, vue d’angle",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-006",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c53754c0e6.jpg",
+          "referencePdfPages": [
+            20
+          ],
+          "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-006.webp",
+          "width": 1600,
+          "height": 1126,
+          "bytes": 323820,
+          "sha256": "9ba9d629573df59d0cf982a958d3de1dfe6385ff4bf4ee252fde5afb58308158",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/residence-bandalungwa/2000_6a3c53754c0e6.jpg",
+          "sourceSha256": "5baf699f02cb3003f1851679374915a5c9b13dc91b2a0f21a57813ad3540fe68",
+          "originalWidth": 2000,
+          "originalHeight": 1407,
+          "srcSet": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-006-640.webp 640w, /images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-006.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-006-640.webp",
+              "width": 640,
+              "height": 450,
+              "bytes": 70178,
+              "sha256": "f24b23e971704a2160531b4367bdbc09a41aba10b5718afd6f3faedce5a82339"
+            }
+          ]
+        },
+        {
+          "alt": "Résidence unifamiliale, Bandalungwa — Rendu 3D d’angle depuis la rue",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-007",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c53667f75b.png",
+          "referencePdfPages": [
+            20
+          ],
+          "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007.webp",
+          "width": 1600,
+          "height": 1127,
+          "bytes": 260894,
+          "sha256": "7f03c757136edad8ff182e0131a0f5a9e21126d238281f0bc750b1844e600c02",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/residence-bandalungwa/2000_6a3c53667f75b.png",
+          "sourceSha256": "a000df3ae27a9d7a6360c76f8d582465ae52460b33d3c8bbd809e78e23728e66",
+          "originalWidth": 2000,
+          "originalHeight": 1409,
+          "srcSet": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007-640.webp 640w, /images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007-640.webp",
+              "width": 640,
+              "height": 451,
+              "bytes": 53574,
+              "sha256": "8e858c21b79477cc7d7a840f2ba4d30429b34d878d18755fec1a6a00520ed618"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/residence-bandalungwa/residence-bandalungwa-p20-01.jpg"
+    },
+    "project-09": {
+      "images": [
+        {
+          "alt": "Résidence unifamiliale, Mont-Ngafula — Rendu 3D de la villa",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 21,
+          "sourceAsset": "/images/residence-mont-ngafula/residence-mont-ngafula-p21-01.jpg",
+          "src": "/images/optimized/residence-mont-ngafula/residence-mont-ngafula-p21-01.jpg",
+          "width": 919,
+          "height": 565,
+          "bytes": 93880,
+          "sha256": "dd050871b8d495726913861e1c468574f201a601d8deee1047f1785fee5d7239",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-mont-ngafula/residence-mont-ngafula-p21-01.jpg",
+          "sourceSha256": "dd050871b8d495726913861e1c468574f201a601d8deee1047f1785fee5d7239",
+          "originalWidth": 919,
+          "originalHeight": 565,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Mont-Ngafula — Rendu 3D de la villa",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 21,
+          "sourceAsset": "/images/residence-mont-ngafula/residence-mont-ngafula-p21-02.jpg",
+          "src": "/images/optimized/residence-mont-ngafula/residence-mont-ngafula-p21-02.jpg",
+          "width": 911,
+          "height": 548,
+          "bytes": 87360,
+          "sha256": "d6a8fbd5d40da6907f33cf79c1e3982d34525bfdab712729c5b6cb53d8070399",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-mont-ngafula/residence-mont-ngafula-p21-02.jpg",
+          "sourceSha256": "d6a8fbd5d40da6907f33cf79c1e3982d34525bfdab712729c5b6cb53d8070399",
+          "originalWidth": 911,
+          "originalHeight": 548,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Mont-Ngafula — Rendu 3D de l’entrée",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 21,
+          "sourceAsset": "/images/residence-mont-ngafula/residence-mont-ngafula-p21-03.jpg",
+          "src": "/images/optimized/residence-mont-ngafula/residence-mont-ngafula-p21-03.jpg",
+          "width": 414,
+          "height": 272,
+          "bytes": 21069,
+          "sha256": "0b774aa47d1249b8fc956b3de1a0c43fa53557d41e667719a0d41b83ad366426",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-mont-ngafula/residence-mont-ngafula-p21-03.jpg",
+          "sourceSha256": "0b774aa47d1249b8fc956b3de1a0c43fa53557d41e667719a0d41b83ad366426",
+          "originalWidth": 414,
+          "originalHeight": 272,
+          "variants": []
+        },
+        {
+          "alt": "Résidence unifamiliale, Mont-Ngafula — Rendu 3D de la façade",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 21,
+          "sourceAsset": "/images/residence-mont-ngafula/residence-mont-ngafula-p21-04.jpg",
+          "src": "/images/optimized/residence-mont-ngafula/residence-mont-ngafula-p21-04.jpg",
+          "width": 412,
+          "height": 260,
+          "bytes": 17329,
+          "sha256": "46664d4d7de4e30ea3d3dc38409638d08e614786057a07dbb73bec0c5cd0631f",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-mont-ngafula/residence-mont-ngafula-p21-04.jpg",
+          "sourceSha256": "46664d4d7de4e30ea3d3dc38409638d08e614786057a07dbb73bec0c5cd0631f",
+          "originalWidth": 412,
+          "originalHeight": 260,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/residence-mont-ngafula/residence-mont-ngafula-p21-01.jpg"
+    },
+    "project-10": {
+      "images": [
+        {
+          "alt": "Bistro — Rendu 3D de nuit du portique éclairé",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 23,
+          "sourceAsset": "/images/bistro/bistro-p23-01.jpg",
+          "src": "/images/optimized/bistro/bistro-p23-01.jpg",
+          "width": 767,
+          "height": 481,
+          "bytes": 34292,
+          "sha256": "7311d543676c32c5d13a1b8fea74c70485ca4be8f7c9acc5c30dd14fb2a30638",
+          "sourceLocalPath": "docs/content/pdf-media-originals/bistro/bistro-p23-01.jpg",
+          "sourceSha256": "7311d543676c32c5d13a1b8fea74c70485ca4be8f7c9acc5c30dd14fb2a30638",
+          "originalWidth": 767,
+          "originalHeight": 481,
+          "variants": []
+        },
+        {
+          "alt": "Bistro — Rendu 3D de jour du portique et de l’allée du jardin",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 23,
+          "sourceAsset": "/images/bistro/bistro-p23-02.jpg",
+          "src": "/images/optimized/bistro/bistro-p23-02.jpg",
+          "width": 765,
+          "height": 469,
+          "bytes": 45995,
+          "sha256": "5df6e1b4a7768605ada9db507f4fc9db55b94a15d25cf71c99345046c4a78834",
+          "sourceLocalPath": "docs/content/pdf-media-originals/bistro/bistro-p23-02.jpg",
+          "sourceSha256": "5df6e1b4a7768605ada9db507f4fc9db55b94a15d25cf71c99345046c4a78834",
+          "originalWidth": 765,
+          "originalHeight": 469,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/bistro/bistro-p23-02.jpg"
+    },
+    "project-11": {
+      "images": [
+        {
+          "alt": "Immeuble résidentiel — Perspective 3D d’angle en fin de journée",
+          "kind": "render-3d",
+          "credit": "Finura Diseno SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 24,
+          "sourceAsset": "/images/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-01.jpg",
+          "src": "/images/optimized/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-01.jpg",
+          "width": 616,
+          "height": 405,
+          "bytes": 43749,
+          "sha256": "fe2ca6507f9cbc7da786aecbb6ab7f6433e056aeb3a4c084ec48240e9b6bee5e",
+          "sourceLocalPath": "docs/content/pdf-media-originals/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-01.jpg",
+          "sourceSha256": "fe2ca6507f9cbc7da786aecbb6ab7f6433e056aeb3a4c084ec48240e9b6bee5e",
+          "originalWidth": 616,
+          "originalHeight": 405,
+          "variants": []
+        },
+        {
+          "alt": "Immeuble résidentiel — Perspective 3D latérale sous un ciel d’orage",
+          "kind": "render-3d",
+          "credit": "Finura Diseno SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 24,
+          "sourceAsset": "/images/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-02.jpg",
+          "src": "/images/optimized/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-02.jpg",
+          "width": 615,
+          "height": 365,
+          "bytes": 27657,
+          "sha256": "09502deadde9ab9fde96cb255c1be84a7bc42364258584e6fbad4c85cfcd6d57",
+          "sourceLocalPath": "docs/content/pdf-media-originals/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-02.jpg",
+          "sourceSha256": "09502deadde9ab9fde96cb255c1be84a7bc42364258584e6fbad4c85cfcd6d57",
+          "originalWidth": 615,
+          "originalHeight": 365,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/immeuble-residentiel-finura/immeuble-residentiel-finura-p24-01.jpg"
+    },
+    "project-12": {
+      "images": [
+        {
+          "alt": "Hôtel présidentiel, Gemena — Rendu 3D de la marquise et du parvis d’arrivée",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-011",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c9a7373708.jpg",
+          "referencePdfPages": [
+            25
+          ],
+          "src": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 220150,
+          "sha256": "e8269b80a6357af9ea157e51b95d49ca9675f67831ce4565b945e7b907b5fe29",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/hotel-presidentiel-gemena/2000_6a3c9a7373708.jpg",
+          "sourceSha256": "e5f1cf4a6367f79e5b6cf48c1e7c537ec0f61b4f9cdc69eb266a622d319876e5",
+          "originalWidth": 1920,
+          "originalHeight": 1080,
+          "srcSet": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011-640.webp 640w, /images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011-640.webp",
+              "width": 640,
+              "height": 360,
+              "bytes": 44922,
+              "sha256": "892bd34db731d309c45015c1946bea894cec822a491e6709cf41886204116612"
+            }
+          ]
+        },
+        {
+          "alt": "Hôtel présidentiel, Gemena — Rendu 3D des chambres et de leurs terrasses",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "pdf",
+          "sourcePage": 25,
+          "sourceAsset": "/images/hotel-presidentiel-gemena/hotel-presidentiel-gemena-p25-02.jpg",
+          "src": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-p25-02.jpg",
+          "width": 875,
+          "height": 485,
+          "bytes": 59562,
+          "sha256": "70d5874572189c18a4294872f712905d09115a29c1da7028ca96520966a7b5ee",
+          "sourceLocalPath": "docs/content/pdf-media-originals/hotel-presidentiel-gemena/hotel-presidentiel-gemena-p25-02.jpg",
+          "sourceSha256": "70d5874572189c18a4294872f712905d09115a29c1da7028ca96520966a7b5ee",
+          "originalWidth": 875,
+          "originalHeight": 485,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011.webp"
+    },
+    "project-13": {
+      "images": [
+        {
+          "alt": "Ensemble de villas — Rendu 3D de la rue de villas",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "pdf",
+          "sourcePage": 26,
+          "sourceAsset": "/images/ensemble-villas/ensemble-villas-p26-01.jpg",
+          "src": "/images/optimized/ensemble-villas/ensemble-villas-p26-01.jpg",
+          "width": 1192,
+          "height": 651,
+          "bytes": 72712,
+          "sha256": "750610275bc9a34e99b8c9f996cd1d90a208b3809d227100d1d8058a3faaf4bc",
+          "sourceLocalPath": "docs/content/pdf-media-originals/ensemble-villas/ensemble-villas-p26-01.jpg",
+          "sourceSha256": "750610275bc9a34e99b8c9f996cd1d90a208b3809d227100d1d8058a3faaf4bc",
+          "originalWidth": 1192,
+          "originalHeight": 651,
+          "srcSet": "/images/optimized/ensemble-villas/ensemble-villas-p26-01-640.webp 640w, /images/optimized/ensemble-villas/ensemble-villas-p26-01.jpg 1192w",
+          "variants": [
+            {
+              "src": "/images/optimized/ensemble-villas/ensemble-villas-p26-01-640.webp",
+              "width": 640,
+              "height": 350,
+              "bytes": 45600,
+              "sha256": "b18f06dfcb0ec8f8a0bb77d2e595ea97d861824eb8c5786099e9564f48b7aae6"
+            }
+          ]
+        },
+        {
+          "alt": "Ensemble de villas — Rendu 3D des clôtures et entrées",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "pdf",
+          "sourcePage": 26,
+          "sourceAsset": "/images/ensemble-villas/ensemble-villas-p26-02.jpg",
+          "src": "/images/optimized/ensemble-villas/ensemble-villas-p26-02.jpg",
+          "width": 1184,
+          "height": 564,
+          "bytes": 72256,
+          "sha256": "a643a682bb8086437c1c138364b73490b0811cf9d6d1b81076fd9ede0d68dbdb",
+          "sourceLocalPath": "docs/content/pdf-media-originals/ensemble-villas/ensemble-villas-p26-02.jpg",
+          "sourceSha256": "a643a682bb8086437c1c138364b73490b0811cf9d6d1b81076fd9ede0d68dbdb",
+          "originalWidth": 1184,
+          "originalHeight": 564,
+          "srcSet": "/images/optimized/ensemble-villas/ensemble-villas-p26-02-640.webp 640w, /images/optimized/ensemble-villas/ensemble-villas-p26-02.jpg 1184w",
+          "variants": [
+            {
+              "src": "/images/optimized/ensemble-villas/ensemble-villas-p26-02-640.webp",
+              "width": 640,
+              "height": 305,
+              "bytes": 45030,
+              "sha256": "400b63c56346a3f16f35f03601a67bde407bd293469c0a9dd271d342fdd9e9f1"
+            }
+          ]
+        },
+        {
+          "alt": "Ensemble de villas — Rendu 3D de la rue et des villas",
+          "kind": "render-3d",
+          "credit": "Smile Groupe SARLU",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-002",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c518c31d6e.jpg",
+          "referencePdfPages": [
+            26
+          ],
+          "src": "/images/optimized/ensemble-villas/ensemble-villas-gallery-002.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 205798,
+          "sha256": "0e3830a8190348b0aa33b3b7f40786abedf817a98877205d16f552e38b692600",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/ensemble-villas/2000_6a3c518c31d6e.jpg",
+          "sourceSha256": "8595573268dc3e4b787c85382ba88014f2a89cb4c879680163484177b9f4cd9c",
+          "originalWidth": 2000,
+          "originalHeight": 1125,
+          "srcSet": "/images/optimized/ensemble-villas/ensemble-villas-gallery-002-640.webp 640w, /images/optimized/ensemble-villas/ensemble-villas-gallery-002.webp 1600w",
+          "variants": [
+            {
+              "src": "/images/optimized/ensemble-villas/ensemble-villas-gallery-002-640.webp",
+              "width": 640,
+              "height": 360,
+              "bytes": 44460,
+              "sha256": "6f2f860e4a9373dad3bee17aca52c48d49b5ab7de6c49b3cdaeab204d1ab2e0a"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/ensemble-villas/ensemble-villas-p26-01.jpg"
+    },
+    "project-14": {
+      "images": [
+        {
+          "alt": "Résidence, perspectives — Perspective 3D extérieure de la résidence",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 27,
+          "sourceAsset": "/images/residence-perspectives/residence-perspectives-p27-01.jpg",
+          "src": "/images/optimized/residence-perspectives/residence-perspectives-p27-01.jpg",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 180706,
+          "sha256": "22a544c8777dd96d536a8afd8af6bd3fa60c414a23eff1ddaf4c2909a5958ba4",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-perspectives/residence-perspectives-p27-01.jpg",
+          "sourceSha256": "22a544c8777dd96d536a8afd8af6bd3fa60c414a23eff1ddaf4c2909a5958ba4",
+          "originalWidth": 1920,
+          "originalHeight": 1080,
+          "srcSet": "/images/optimized/residence-perspectives/residence-perspectives-p27-01-640.webp 640w, /images/optimized/residence-perspectives/residence-perspectives-p27-01.jpg 1920w",
+          "variants": [
+            {
+              "src": "/images/optimized/residence-perspectives/residence-perspectives-p27-01-640.webp",
+              "width": 640,
+              "height": 360,
+              "bytes": 54338,
+              "sha256": "59501deb0aa1c40483ba1b7728c40fd8f9c98a7dd1d2e6f0abae1d2b2cf235b3"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/residence-perspectives/residence-perspectives-p27-01.jpg"
+    },
+    "project-15": {
+      "images": [
+        {
+          "alt": "Restaurant Palms — Rendu 3D de la salle sous pergola",
+          "kind": "render-3d",
+          "credit": "APEX Engineering",
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-003",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c51bfbdb4e.png",
+          "referencePdfPages": [
+            28
+          ],
+          "src": "/images/optimized/restaurant-palms/restaurant-palms-gallery-003.webp",
+          "width": 1494,
+          "height": 1053,
+          "bytes": 348038,
+          "sha256": "81bc039a74ec5a9da2e14abc4ac07fb5d101c4a4d6d9cce6a7e3e6f1eac867cd",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/restaurant-palms/2000_6a3c51bfbdb4e.png",
+          "sourceSha256": "7848f7e853fdfcff53c02c3c76c6ca4e09459c7a57b7d583fdba4aa62b8a61c9",
+          "originalWidth": 1494,
+          "originalHeight": 1053,
+          "srcSet": "/images/optimized/restaurant-palms/restaurant-palms-gallery-003-640.webp 640w, /images/optimized/restaurant-palms/restaurant-palms-gallery-003.webp 1494w",
+          "variants": [
+            {
+              "src": "/images/optimized/restaurant-palms/restaurant-palms-gallery-003-640.webp",
+              "width": 640,
+              "height": 451,
+              "bytes": 91710,
+              "sha256": "e275782045f1982229a9e3708ca07f567349a4e94f8b655fe34879fc0b6d08e9"
+            }
+          ]
+        },
+        {
+          "alt": "Restaurant Palms — Rendu 3D de l’enseigne lumineuse",
+          "kind": "render-3d",
+          "credit": "APEX Engineering",
+          "sourceKind": "pdf",
+          "sourcePage": 28,
+          "sourceAsset": "/images/restaurant-palms/restaurant-palms-p28-02.jpg",
+          "src": "/images/optimized/restaurant-palms/restaurant-palms-p28-02.jpg",
+          "width": 923,
+          "height": 540,
+          "bytes": 84480,
+          "sha256": "a464571b3fa394cdf1cc64aabb016a367168ce193a90ea87660d072df6016f0b",
+          "sourceLocalPath": "docs/content/pdf-media-originals/restaurant-palms/restaurant-palms-p28-02.jpg",
+          "sourceSha256": "a464571b3fa394cdf1cc64aabb016a367168ce193a90ea87660d072df6016f0b",
+          "originalWidth": 923,
+          "originalHeight": 540,
+          "variants": []
+        },
+        {
+          "alt": "Restaurant Palms — Axonométrie du restaurant",
+          "kind": "drawing",
+          "credit": "APEX Engineering",
+          "sourceKind": "pdf",
+          "sourcePage": 28,
+          "sourceAsset": "/images/restaurant-palms/restaurant-palms-p28-03.jpg",
+          "src": "/images/optimized/restaurant-palms/restaurant-palms-p28-03.jpg",
+          "width": 531,
+          "height": 346,
+          "bytes": 28463,
+          "sha256": "db19055040238c11ee1d252b43a9b0a2081f9bb1df5ccabae327ee85b779678d",
+          "sourceLocalPath": "docs/content/pdf-media-originals/restaurant-palms/restaurant-palms-p28-03.jpg",
+          "sourceSha256": "db19055040238c11ee1d252b43a9b0a2081f9bb1df5ccabae327ee85b779678d",
+          "originalWidth": 531,
+          "originalHeight": 346,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/restaurant-palms/restaurant-palms-gallery-003.webp"
+    },
+    "project-16": {
+      "images": [
+        {
+          "alt": "Minimal House — Rendu 3D de l’immeuble au crépuscule",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 29,
+          "sourceAsset": "/images/minimal-house/minimal-house-p29-01.jpg",
+          "src": "/images/optimized/minimal-house/minimal-house-p29-01.jpg",
+          "width": 1080,
+          "height": 762,
+          "bytes": 89173,
+          "sha256": "d4ddc941443c3f83eb45adf33fcadd80ea1771159700c32ed7d6a68df83ef230",
+          "sourceLocalPath": "docs/content/pdf-media-originals/minimal-house/minimal-house-p29-01.jpg",
+          "sourceSha256": "d4ddc941443c3f83eb45adf33fcadd80ea1771159700c32ed7d6a68df83ef230",
+          "originalWidth": 1080,
+          "originalHeight": 762,
+          "srcSet": "/images/optimized/minimal-house/minimal-house-p29-01-640.webp 640w, /images/optimized/minimal-house/minimal-house-p29-01.jpg 1080w",
+          "variants": [
+            {
+              "src": "/images/optimized/minimal-house/minimal-house-p29-01-640.webp",
+              "width": 640,
+              "height": 452,
+              "bytes": 62118,
+              "sha256": "b210d9fab53e8db2bf3d099edaab262f934ed8437355d313371fb127eb2d40e2"
+            }
+          ]
+        },
+        {
+          "alt": "Minimal House — Rendu 3D du rooftop",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-025",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3d176a4a81b.jpg",
+          "referencePdfPages": [
+            29
+          ],
+          "src": "/images/optimized/minimal-house/minimal-house-gallery-025.jpg",
+          "width": 1080,
+          "height": 762,
+          "bytes": 180735,
+          "sha256": "96a1543ad2ce9ec3c000b6f842038dedcd7c147189a7af9c8cc6444a4ac5bfdc",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/minimal-house/2000_6a3d176a4a81b.jpg",
+          "sourceSha256": "96a1543ad2ce9ec3c000b6f842038dedcd7c147189a7af9c8cc6444a4ac5bfdc",
+          "originalWidth": 1080,
+          "originalHeight": 762,
+          "srcSet": "/images/optimized/minimal-house/minimal-house-gallery-025-640.webp 640w, /images/optimized/minimal-house/minimal-house-gallery-025.jpg 1080w",
+          "variants": [
+            {
+              "src": "/images/optimized/minimal-house/minimal-house-gallery-025-640.webp",
+              "width": 640,
+              "height": 452,
+              "bytes": 70502,
+              "sha256": "f06dedb0612999fd3fb8ee4c14308998e9b8bf07c435dcaae6c56922bbdf89f9"
+            }
+          ]
+        },
+        {
+          "alt": "Minimal House — Rendu 3D d’angle au crépuscule",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-023",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3d176a4bed6.jpg",
+          "referencePdfPages": [
+            29
+          ],
+          "src": "/images/optimized/minimal-house/minimal-house-gallery-023.webp",
+          "width": 1080,
+          "height": 761,
+          "bytes": 122090,
+          "sha256": "6fa15c423802134391f7c71cd928101bc08668b0627857e978c27b4b477e28be",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/minimal-house/2000_6a3d176a4bed6.jpg",
+          "sourceSha256": "e82f40e147cfc52fa7c9ef88c3c7b4b2effd9c44250d2bb2902cb02d61f69f0f",
+          "originalWidth": 1080,
+          "originalHeight": 761,
+          "srcSet": "/images/optimized/minimal-house/minimal-house-gallery-023-640.webp 640w, /images/optimized/minimal-house/minimal-house-gallery-023.webp 1080w",
+          "variants": [
+            {
+              "src": "/images/optimized/minimal-house/minimal-house-gallery-023-640.webp",
+              "width": 640,
+              "height": 451,
+              "bytes": 53706,
+              "sha256": "81e83f299c420dd06e06559ae316ff677572ee4d9a2eccf198ccae0d116e3fb9"
+            }
+          ]
+        },
+        {
+          "alt": "Minimal House — Rendu 3D de la façade sur rue",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 29,
+          "sourceAsset": "/images/minimal-house/minimal-house-p29-04.jpg",
+          "src": "/images/optimized/minimal-house/minimal-house-p29-04.jpg",
+          "width": 695,
+          "height": 540,
+          "bytes": 57353,
+          "sha256": "7db8ef99c47f2cfabde237d2ca6f62852808ce41e91221819838ae3158837d75",
+          "sourceLocalPath": "docs/content/pdf-media-originals/minimal-house/minimal-house-p29-04.jpg",
+          "sourceSha256": "7db8ef99c47f2cfabde237d2ca6f62852808ce41e91221819838ae3158837d75",
+          "originalWidth": 695,
+          "originalHeight": 540,
+          "variants": []
+        },
+        {
+          "alt": "Minimal House — Variante de jour de la façade, rendu 3D",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "site123",
+          "sourceAssetId": "gallery-024",
+          "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3d176a483db.jpg",
+          "referencePdfPages": [
+            29
+          ],
+          "src": "/images/optimized/minimal-house/minimal-house-gallery-024.webp",
+          "width": 1080,
+          "height": 732,
+          "bytes": 162484,
+          "sha256": "9f26048b7b37bd782ced16f47601e2103ba94709fed04222e213cabac04c72da",
+          "sourceLocalPath": "docs/content/site-reference/media/projects/minimal-house/2000_6a3d176a483db.jpg",
+          "sourceSha256": "a53e8837dbe6b0cfebdf708bda38e2608bc054820b32384f4a9697c85aa4c635",
+          "originalWidth": 1080,
+          "originalHeight": 732,
+          "srcSet": "/images/optimized/minimal-house/minimal-house-gallery-024-640.webp 640w, /images/optimized/minimal-house/minimal-house-gallery-024.webp 1080w",
+          "variants": [
+            {
+              "src": "/images/optimized/minimal-house/minimal-house-gallery-024-640.webp",
+              "width": 640,
+              "height": 434,
+              "bytes": 69860,
+              "sha256": "c8677623a19b64ce24319756542ec6eef68a9a39772feae4aae6e148bde5994a"
+            }
+          ]
+        }
+      ],
+      "coverImage": "/images/optimized/minimal-house/minimal-house-p29-01.jpg"
+    },
+    "project-17": {
+      "images": [
+        {
+          "alt": "Stade Jabako — Rendu 3D de la tribune principale",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 30,
+          "sourceAsset": "/images/stade-jabako/stade-jabako-p30-01.jpg",
+          "src": "/images/optimized/stade-jabako/stade-jabako-p30-01.jpg",
+          "width": 791,
+          "height": 574,
+          "bytes": 45038,
+          "sha256": "d90ecc62c12ee515aaf337d39d5880525d52dc250f057b78ca5c04b401e94fcb",
+          "sourceLocalPath": "docs/content/pdf-media-originals/stade-jabako/stade-jabako-p30-01.jpg",
+          "sourceSha256": "d90ecc62c12ee515aaf337d39d5880525d52dc250f057b78ca5c04b401e94fcb",
+          "originalWidth": 791,
+          "originalHeight": 574,
+          "variants": []
+        },
+        {
+          "alt": "Stade Jabako — Rendu 3D de l’entrée du stade",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 30,
+          "sourceAsset": "/images/stade-jabako/stade-jabako-p30-02.jpg",
+          "src": "/images/optimized/stade-jabako/stade-jabako-p30-02.jpg",
+          "width": 778,
+          "height": 574,
+          "bytes": 44231,
+          "sha256": "d6a5a77b1d55f9d04a45d68c3facea66424eeb58e4f2c7bce521656b40936ac0",
+          "sourceLocalPath": "docs/content/pdf-media-originals/stade-jabako/stade-jabako-p30-02.jpg",
+          "sourceSha256": "d6a5a77b1d55f9d04a45d68c3facea66424eeb58e4f2c7bce521656b40936ac0",
+          "originalWidth": 778,
+          "originalHeight": 574,
+          "variants": []
+        },
+        {
+          "alt": "Stade Jabako — Rendu 3D du terrain",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 30,
+          "sourceAsset": "/images/stade-jabako/stade-jabako-p30-03.jpg",
+          "src": "/images/optimized/stade-jabako/stade-jabako-p30-03.jpg",
+          "width": 778,
+          "height": 531,
+          "bytes": 37963,
+          "sha256": "48fa8fec4479a450815c3afb0f305e4e83d96bdff94783bc903518f2813a8091",
+          "sourceLocalPath": "docs/content/pdf-media-originals/stade-jabako/stade-jabako-p30-03.jpg",
+          "sourceSha256": "48fa8fec4479a450815c3afb0f305e4e83d96bdff94783bc903518f2813a8091",
+          "originalWidth": 778,
+          "originalHeight": 531,
+          "variants": []
+        },
+        {
+          "alt": "Stade Jabako — Rendu 3D depuis le but",
+          "kind": "render-3d",
+          "credit": "MAK SARL",
+          "sourceKind": "pdf",
+          "sourcePage": 30,
+          "sourceAsset": "/images/stade-jabako/stade-jabako-p30-04.jpg",
+          "src": "/images/optimized/stade-jabako/stade-jabako-p30-04.jpg",
+          "width": 791,
+          "height": 531,
+          "bytes": 60251,
+          "sha256": "cae30198bd04b6fd063363647b00d22a0671847d71dcb3be8f3d95d93f0d5ebf",
+          "sourceLocalPath": "docs/content/pdf-media-originals/stade-jabako/stade-jabako-p30-04.jpg",
+          "sourceSha256": "cae30198bd04b6fd063363647b00d22a0671847d71dcb3be8f3d95d93f0d5ebf",
+          "originalWidth": 791,
+          "originalHeight": 531,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/stade-jabako/stade-jabako-p30-02.jpg"
+    },
+    "project-18": {
+      "images": [
+        {
+          "alt": "Résidence NZO — Rendu 3D de la façade et du portail",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 31,
+          "sourceAsset": "/images/residence-nzo/residence-nzo-p31-01.jpg",
+          "src": "/images/optimized/residence-nzo/residence-nzo-p31-01.jpg",
+          "width": 806,
+          "height": 540,
+          "bytes": 68719,
+          "sha256": "63d9ad3a6a0b4d9dfbf443aab117304df081cfcbe3ce6f1f02be9143f2fdc75f",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-nzo/residence-nzo-p31-01.jpg",
+          "sourceSha256": "63d9ad3a6a0b4d9dfbf443aab117304df081cfcbe3ce6f1f02be9143f2fdc75f",
+          "originalWidth": 806,
+          "originalHeight": 540,
+          "variants": []
+        },
+        {
+          "alt": "Résidence NZO — Rendu 3D de la villa avec voiture au premier plan",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 31,
+          "sourceAsset": "/images/residence-nzo/residence-nzo-p31-02.jpg",
+          "src": "/images/optimized/residence-nzo/residence-nzo-p31-02.jpg",
+          "width": 806,
+          "height": 569,
+          "bytes": 82022,
+          "sha256": "74bebd4704f472b93075797ab802713e0437328038964674e8b2b2ca367a761a",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-nzo/residence-nzo-p31-02.jpg",
+          "sourceSha256": "74bebd4704f472b93075797ab802713e0437328038964674e8b2b2ca367a761a",
+          "originalWidth": 806,
+          "originalHeight": 569,
+          "variants": []
+        },
+        {
+          "alt": "Résidence NZO — Rendu 3D frontal de la façade",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 31,
+          "sourceAsset": "/images/residence-nzo/residence-nzo-p31-03.jpg",
+          "src": "/images/optimized/residence-nzo/residence-nzo-p31-03.jpg",
+          "width": 813,
+          "height": 569,
+          "bytes": 80603,
+          "sha256": "fc1eed47d35b45332f85712ea39336b17a718c0bab2e4013e1d3b961de8d8af3",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-nzo/residence-nzo-p31-03.jpg",
+          "sourceSha256": "fc1eed47d35b45332f85712ea39336b17a718c0bab2e4013e1d3b961de8d8af3",
+          "originalWidth": 813,
+          "originalHeight": 569,
+          "variants": []
+        },
+        {
+          "alt": "Résidence NZO — Rendu 3D latéral de la villa",
+          "kind": "render-3d",
+          "credit": null,
+          "sourceKind": "pdf",
+          "sourcePage": 31,
+          "sourceAsset": "/images/residence-nzo/residence-nzo-p31-04.jpg",
+          "src": "/images/optimized/residence-nzo/residence-nzo-p31-04.jpg",
+          "width": 815,
+          "height": 540,
+          "bytes": 79299,
+          "sha256": "489bbc8749afaf7e27c8ed6382c1a23b93e492a2aedd692f7d04bc00f3809d91",
+          "sourceLocalPath": "docs/content/pdf-media-originals/residence-nzo/residence-nzo-p31-04.jpg",
+          "sourceSha256": "489bbc8749afaf7e27c8ed6382c1a23b93e492a2aedd692f7d04bc00f3809d91",
+          "originalWidth": 815,
+          "originalHeight": 540,
+          "variants": []
+        }
+      ],
+      "coverImage": "/images/optimized/residence-nzo/residence-nzo-p31-02.jpg"
+    }
+  },
+  "heroPortrait": {
+    "alt": "Kevin Kilongo Munganga, portrait en noir et blanc",
+    "kind": "photograph",
+    "credit": null,
+    "sourceKind": "site123",
+    "sourceAssetId": "portrait-accueil",
+    "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c471a3b2a2.jpg",
+    "referencePdfPages": [],
+    "src": "/images/optimized/profile-services/profile-services-portrait-accueil.webp",
+    "width": 1600,
+    "height": 1131,
+    "bytes": 116612,
+    "sha256": "6df73f29d72764fde2aeb60e9a5f5e6ef9851c4e091e8b35a24d76b3ce08921e",
+    "sourceLocalPath": "docs/content/site-reference/media/profile-services/2000_6a3c471a3b2a2.jpg",
+    "sourceSha256": "da587100f1954a91378b19d3928d0d8e037733dfc05824fa90a33df8783a8a36",
+    "originalWidth": 2000,
+    "originalHeight": 1414,
+    "srcSet": "/images/optimized/profile-services/profile-services-portrait-accueil-640.webp 640w, /images/optimized/profile-services/profile-services-portrait-accueil.webp 1600w",
+    "variants": [
+      {
+        "src": "/images/optimized/profile-services/profile-services-portrait-accueil-640.webp",
+        "width": 640,
+        "height": 452,
+        "bytes": 32226,
+        "sha256": "795df904c3116ecd4d1aed22e4437eccbdad8114bf11bab7b5e8d76f33a66634"
+      }
+    ]
+  },
+  "portrait": {
+    "alt": "Kevin Kilongo Munganga, portrait en couleur",
+    "kind": "photograph",
+    "credit": null,
+    "sourceKind": "site123",
+    "sourceAssetId": "portrait-couleur",
+    "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6ad462e0b6083.jpg",
+    "referencePdfPages": [],
+    "src": "/images/optimized/profile-services/profile-services-portrait-couleur.webp",
+    "width": 960,
+    "height": 1280,
+    "bytes": 48510,
+    "sha256": "862421b7a2a320b2a2f420c5b2b2d66d29856a9aa70e42d41334105d09f7599b",
+    "sourceLocalPath": "docs/content/site-reference/media/profile-services/2000_6ad462e0b6083.jpg",
+    "sourceSha256": "ba8980ff4ebe22bd47510d902d80034d98ebd501a775dbdfc6386e8ba98e5bd3",
+    "originalWidth": 960,
+    "originalHeight": 1280,
+    "variants": []
+  },
+  "services": {
+    "suivi": {
+      "alt": "Visite de chantier entre les fouilles et les coffrages",
+      "kind": "photograph",
+      "credit": null,
+      "sourceKind": "site123",
+      "sourceAssetId": "service-suivi",
+      "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/800_6a3ca617009b9.jpg",
+      "referencePdfPages": [],
+      "src": "/images/optimized/profile-services/profile-services-service-suivi.jpg",
+      "width": 800,
+      "height": 1067,
+      "bytes": 240312,
+      "sha256": "5af09218cb032100a4012f15734bafadc51d9848adb62c447e7595ec9a4fdee0",
+      "sourceLocalPath": "docs/content/site-reference/media/profile-services/800_6a3ca617009b9.jpg",
+      "sourceSha256": "5af09218cb032100a4012f15734bafadc51d9848adb62c447e7595ec9a4fdee0",
+      "originalWidth": 800,
+      "originalHeight": 1067,
+      "variants": []
+    },
+    "conseil": {
+      "alt": "Kevin Kilongo sur chantier, devant des coffrages en bois",
+      "kind": "photograph",
+      "credit": null,
+      "sourceKind": "site123",
+      "sourceAssetId": "service-conseil",
+      "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/800_6a3d465311689.jpg",
+      "referencePdfPages": [],
+      "src": "/images/optimized/profile-services/profile-services-service-conseil.jpg",
+      "width": 800,
+      "height": 630,
+      "bytes": 86995,
+      "sha256": "75e5c6fce14f6451733c05d347e3f41d20516d8247978169d1d292e4135ae5e5",
+      "sourceLocalPath": "docs/content/site-reference/media/profile-services/800_6a3d465311689.jpg",
+      "sourceSha256": "75e5c6fce14f6451733c05d347e3f41d20516d8247978169d1d292e4135ae5e5",
+      "originalWidth": 800,
+      "originalHeight": 630,
+      "variants": []
+    }
+  },
+  "perspectives": [
+    {
+      "projectId": "project-08",
+      "image": {
+        "alt": "Résidence unifamiliale, Bandalungwa — Rendu 3D d’angle depuis la rue",
+        "kind": "render-3d",
+        "credit": "Smile Groupe SARLU",
+        "sourceKind": "site123",
+        "sourceAssetId": "gallery-007",
+        "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c53667f75b.png",
+        "referencePdfPages": [
+          20
+        ],
+        "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007.webp",
+        "width": 1600,
+        "height": 1127,
+        "bytes": 260894,
+        "sha256": "7f03c757136edad8ff182e0131a0f5a9e21126d238281f0bc750b1844e600c02",
+        "sourceLocalPath": "docs/content/site-reference/media/projects/residence-bandalungwa/2000_6a3c53667f75b.png",
+        "sourceSha256": "a000df3ae27a9d7a6360c76f8d582465ae52460b33d3c8bbd809e78e23728e66",
+        "originalWidth": 2000,
+        "originalHeight": 1409,
+        "srcSet": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007-640.webp 640w, /images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007.webp 1600w",
+        "variants": [
+          {
+            "src": "/images/optimized/residence-bandalungwa/residence-bandalungwa-gallery-007-640.webp",
+            "width": 640,
+            "height": 451,
+            "bytes": 53574,
+            "sha256": "8e858c21b79477cc7d7a840f2ba4d30429b34d878d18755fec1a6a00520ed618"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "project-16",
+      "image": {
+        "alt": "Minimal House — Variante de jour de la façade, rendu 3D",
+        "kind": "render-3d",
+        "credit": null,
+        "sourceKind": "site123",
+        "sourceAssetId": "gallery-024",
+        "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3d176a483db.jpg",
+        "referencePdfPages": [
+          29
+        ],
+        "src": "/images/optimized/minimal-house/minimal-house-gallery-024.webp",
+        "width": 1080,
+        "height": 732,
+        "bytes": 162484,
+        "sha256": "9f26048b7b37bd782ced16f47601e2103ba94709fed04222e213cabac04c72da",
+        "sourceLocalPath": "docs/content/site-reference/media/projects/minimal-house/2000_6a3d176a483db.jpg",
+        "sourceSha256": "a53e8837dbe6b0cfebdf708bda38e2608bc054820b32384f4a9697c85aa4c635",
+        "originalWidth": 1080,
+        "originalHeight": 732,
+        "srcSet": "/images/optimized/minimal-house/minimal-house-gallery-024-640.webp 640w, /images/optimized/minimal-house/minimal-house-gallery-024.webp 1080w",
+        "variants": [
+          {
+            "src": "/images/optimized/minimal-house/minimal-house-gallery-024-640.webp",
+            "width": 640,
+            "height": 434,
+            "bytes": 69860,
+            "sha256": "c8677623a19b64ce24319756542ec6eef68a9a39772feae4aae6e148bde5994a"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "project-12",
+      "image": {
+        "alt": "Hôtel présidentiel, Gemena — Rendu 3D de la marquise et du parvis d’arrivée",
+        "kind": "render-3d",
+        "credit": "Smile Groupe SARLU",
+        "sourceKind": "site123",
+        "sourceAssetId": "gallery-011",
+        "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c9a7373708.jpg",
+        "referencePdfPages": [
+          25
+        ],
+        "src": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 220150,
+        "sha256": "e8269b80a6357af9ea157e51b95d49ca9675f67831ce4565b945e7b907b5fe29",
+        "sourceLocalPath": "docs/content/site-reference/media/projects/hotel-presidentiel-gemena/2000_6a3c9a7373708.jpg",
+        "sourceSha256": "e5f1cf4a6367f79e5b6cf48c1e7c537ec0f61b4f9cdc69eb266a622d319876e5",
+        "originalWidth": 1920,
+        "originalHeight": 1080,
+        "srcSet": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011-640.webp 640w, /images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011.webp 1600w",
+        "variants": [
+          {
+            "src": "/images/optimized/hotel-presidentiel-gemena/hotel-presidentiel-gemena-gallery-011-640.webp",
+            "width": 640,
+            "height": 360,
+            "bytes": 44922,
+            "sha256": "892bd34db731d309c45015c1946bea894cec822a491e6709cf41886204116612"
+          }
+        ]
+      }
+    },
+    {
+      "projectId": "project-04",
+      "image": {
+        "alt": "Architecture intérieure — Rendu 3D de la salle à manger et du séjour",
+        "kind": "render-3d",
+        "credit": "RHOM DESIGN Sarl",
+        "sourceKind": "pdf",
+        "sourcePage": 15,
+        "sourceAsset": "/images/architecture-interieure/architecture-interieure-p15-01.jpg",
+        "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-01.webp",
+        "width": 1280,
+        "height": 900,
+        "bytes": 96526,
+        "sha256": "2d8737f6b73acf5fa9c5a8eebe8eb5a7371cccb2071ac37fd913db6122958b91",
+        "sourceLocalPath": "docs/content/pdf-media-originals/architecture-interieure/architecture-interieure-p15-01.jpg",
+        "sourceSha256": "56b82c663ebaf095a5a4d775530e02bbcfcbada68c6cf4478fdb90a76fe4751b",
+        "originalWidth": 1280,
+        "originalHeight": 900,
+        "srcSet": "/images/optimized/architecture-interieure/architecture-interieure-p15-01-640.webp 640w, /images/optimized/architecture-interieure/architecture-interieure-p15-01.webp 1280w",
+        "variants": [
+          {
+            "src": "/images/optimized/architecture-interieure/architecture-interieure-p15-01-640.webp",
+            "width": 640,
+            "height": 450,
+            "bytes": 38458,
+            "sha256": "9e05375ca993287a2847ce9b7cf522d06e9138330edeac39083d722ff763af2e"
+          }
+        ]
+      }
+    }
+  ]
+}
