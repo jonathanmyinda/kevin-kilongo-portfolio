@@ -71,9 +71,9 @@ Les libellés publics `publicRole` et `missionLabel` complètent les notes de so
 La configuration `vercel.json` fixe le build `npm run build`, la sortie `dist` et
 la réécriture SPA vers `index.html`. Les routes inconnues conservent la page
 introuvable de React. Perspectives reste accessible à `/#perspectives`.
-La branche de production à configurer sur Vercel est `feat/portfolio-foundation`.
-Le projet doit être connecté à GitHub pour reconstruire automatiquement cette
-branche à chaque push. Aucun domaine personnalisé n’est requis.
+La version de publication est intégrée dans `main`. Les déploiements Git
+automatiques de `main` sont désactivés dans `vercel.json` afin de laisser la
+publication Vercel manuelle au propriétaire. Aucun domaine personnalisé n’est requis.
 `node scripts/validate-release.mjs` vérifie les fichiers publics, le build et
 les exclusions avant publication. Les archives d’audit restent locales et sont
 ignorées par Git ; `.vercelignore` exclut également docs et scripts des envois CLI.
