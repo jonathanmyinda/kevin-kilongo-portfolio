@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
-import { profile, pdfSize } from '../data/catalog'
+import { profile, pdfSize, contactLinks } from '../data/catalog'
 import Arrow from './Arrow'
 import MotionEnhancements from './MotionEnhancements'
 
@@ -37,7 +37,7 @@ function Header() {
           <Link to="/#expertises" aria-current={sectionActive('#expertises') ? 'location' : undefined} onClick={close}>Services</Link>
           <Link to="/#a-propos" aria-current={sectionActive('#a-propos') ? 'location' : undefined} onClick={close}>À propos</Link>
           <Link to="/#contact" aria-current={sectionActive('#contact') ? 'location' : undefined} onClick={close}>Contact</Link>
-          <Link to="/#contact" className="header-cta" onClick={close}>Parlons de votre projet <Arrow /></Link>
+          <a href={contactLinks.quote} className="header-cta" onClick={close}>Demander un devis <Arrow /></a>
         </nav>
       </div>
     </header>

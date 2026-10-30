@@ -26,6 +26,16 @@ try {
   const checkPage = async (html) => {
     assert.equal([...html.matchAll(/<h1(?:\s|>)/g)].length, 1, 'Un seul h1 attendu')
     assert(html.includes('id="main-content"'))
+    assert(!/href="tel:\+?243\s?813\s?732\s?058"/.test(html), 'Le numéro de contact doit ouvrir WhatsApp')
+    assert(html.includes(`href="${contactLinks.quote}"`), 'Lien de devis e-mail absent')
+    for (const match of html.matchAll(/<a\b[^>]*>[\s\S]*?<\/a>/g)) {
+      const anchor = match[0]
+      if (anchor.includes(profile.contact.phone)) {
+        assert(anchor.includes('href="https://wa.me/243813732058"'), 'Destination WhatsApp du numéro incorrecte')
+        assert(/aria-label="[^"]*WhatsApp[^"]*"/.test(anchor), 'Action WhatsApp non précisée dans le libellé accessible')
+      }
+      if (anchor.includes('Demander un devis')) assert(anchor.includes(`href="${contactLinks.quote}"`), 'Bouton devis sans objet prérempli')
+    }
     assert(!/(?:issu(?:e)? du site|extraite? du PDF|selon (?:le document|le portfolio)|contenu vérifié|média identifié|Source\s*:|Référence\s*:|composition originale|complémentaires attribuées)/i.test(html), 'Note de fabrication dans les textes ou alternatives publics')
     assert(!/<p\b[^>]*>\s*<\/p>/.test(html), 'Paragraphe vide après nettoyage')
     assert(!/en cours¹|En cours.*selon le portfolio/.test(html), 'Statut actuel non confirmé')
@@ -58,6 +68,12 @@ try {
   for (const id of ['expertises', 'a-propos', 'contact', 'selection', 'perspectives']) assert(home.includes(`id="${id}"`))
   for (const href of Object.values(contactLinks)) assert(home.includes(`href="${href}"`))
   assert.equal(contactLinks.whatsapp, 'https://wa.me/message/6SE5RNJA3PEJM1')
+  assert.equal(contactLinks.phone, 'https://wa.me/243813732058')
+  const quoteUrl = new URL(contactLinks.quote)
+  assert.equal(quoteUrl.protocol, 'mailto:')
+  assert.equal(quoteUrl.pathname, 'kevinkilongo7@gmail.com')
+  assert.equal(quoteUrl.searchParams.get('subject'), 'Demande de devis — Projet architectural')
+  assert.equal([...home.matchAll(/Demander un devis/g)].length, 2)
   for (const social of profile.socials) assert(home.includes(`href="${social.url}"`))
   assert(!home.includes('500 $') && !home.includes('8h00'))
   assert(!/<video\b/.test(home), 'Pas de vidéo à charger')

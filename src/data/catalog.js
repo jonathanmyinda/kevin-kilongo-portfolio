@@ -26,7 +26,8 @@ export function filterProjects(id) {
 }
 export const contactLinks = {
   email: `mailto:${profile.contact.email}`,
-  phone: `tel:${profile.contact.phone.replaceAll(' ', '')}`,
+  quote: `mailto:${profile.contact.email}?subject=${encodeURIComponent('Demande de devis — Projet architectural')}`,
+  phone: 'https://wa.me/243813732058',
   whatsapp: 'https://wa.me/message/6SE5RNJA3PEJM1',
 }
 export const pdfSize = `${(profile.portfolio.bytes / 1_000_000).toLocaleString('fr-FR', { maximumFractionDigits: 2 })} Mo`
