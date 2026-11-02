@@ -1935,51 +1935,16 @@
     }
   },
   "heroPortrait": {
-    "alt": "Kevin Kilongo Munganga, portrait en noir et blanc",
-    "kind": "photograph",
-    "credit": null,
-    "sourceKind": "site123",
-    "sourceAssetId": "portrait-accueil",
-    "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6a3c471a3b2a2.jpg",
-    "referencePdfPages": [],
-    "src": "/images/optimized/profile-services/profile-services-portrait-accueil.webp",
-    "width": 1600,
-    "height": 1131,
-    "bytes": 116612,
-    "sha256": "6df73f29d72764fde2aeb60e9a5f5e6ef9851c4e091e8b35a24d76b3ce08921e",
-    "sourceLocalPath": "docs/content/site-reference/media/profile-services/2000_6a3c471a3b2a2.jpg",
-    "sourceSha256": "da587100f1954a91378b19d3928d0d8e037733dfc05824fa90a33df8783a8a36",
-    "originalWidth": 2000,
-    "originalHeight": 1414,
-    "srcSet": "/images/optimized/profile-services/profile-services-portrait-accueil-640.webp 640w, /images/optimized/profile-services/profile-services-portrait-accueil.webp 1600w",
-    "variants": [
-      {
-        "src": "/images/optimized/profile-services/profile-services-portrait-accueil-640.webp",
-        "width": 640,
-        "height": 452,
-        "bytes": 32226,
-        "sha256": "795df904c3116ecd4d1aed22e4437eccbdad8114bf11bab7b5e8d76f33a66634"
-      }
-    ]
+    "src": "/images/portraits/kevin-kilongo-chemise-bleue.webp",
+    "alt": "Kevin Kilongo Munganga",
+    "width": 960,
+    "height": 1280
   },
   "portrait": {
-    "alt": "Kevin Kilongo Munganga, portrait en couleur",
-    "kind": "photograph",
-    "credit": null,
-    "sourceKind": "site123",
-    "sourceAssetId": "portrait-couleur",
-    "sourceUrl": "https://files.cdn-files-a.com/uploads/12220345/2000_6ad462e0b6083.jpg",
-    "referencePdfPages": [],
-    "src": "/images/optimized/profile-services/profile-services-portrait-couleur.webp",
-    "width": 960,
-    "height": 1280,
-    "bytes": 48510,
-    "sha256": "862421b7a2a320b2a2f420c5b2b2d66d29856a9aa70e42d41334105d09f7599b",
-    "sourceLocalPath": "docs/content/site-reference/media/profile-services/2000_6ad462e0b6083.jpg",
-    "sourceSha256": "ba8980ff4ebe22bd47510d902d80034d98ebd501a775dbdfc6386e8ba98e5bd3",
-    "originalWidth": 960,
-    "originalHeight": 1280,
-    "variants": []
+    "src": "/images/portraits/kevin-kilongo-chemise-jaune.webp",
+    "alt": "Kevin Kilongo Munganga",
+    "width": 1024,
+    "height": 1280
   },
   "services": {
     "suivi": {

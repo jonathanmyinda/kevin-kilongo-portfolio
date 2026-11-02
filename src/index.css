@@ -428,7 +428,7 @@ em, .project-number { font-style: normal; }
 .hero { padding-top: 28px; }
 .hero-stage { position: relative; min-height: 530px; display: grid; align-items: center; }
 .hero-portrait { width: 68%; margin-left: auto; position: relative; }
-.hero-portrait img { width: 100%; }
+.hero-portrait img { width: 100%; height: auto; object-fit: contain; object-position: 60% 25%; filter: none; opacity: 1; }
 .hero-portrait figcaption { font-size: .6rem; color: var(--muted); text-align: right; margin-top: 8px; }
 .hero-copy { position: absolute; left: 0; width: 52%; z-index: 1; padding-block: 20px; }
 .hero-copy .eyebrow { color: var(--accent); font-size: .67rem; }
@@ -475,6 +475,7 @@ em, .project-number { font-style: normal; }
 .perspective-item figcaption > span { display: block; color: var(--muted); font-size: .66rem; margin-top: 7px; line-height: 1.7; }
 .about-intro { grid-template-columns: .7fr 1.5fr; gap: 80px; }
 .portrait { max-width: 280px; }
+.portrait img { height: auto; object-fit: contain; object-position: 50% 15%; filter: none; opacity: 1; }
 .about-copy h2 { font-size: clamp(2.6rem, 3.9vw, 3.7rem); }
 .about-copy .lead { font-size: 1rem; color: var(--ink); }
 .about-facts { color: var(--muted); font-size: .87rem; margin-top: 20px; max-width: 620px; }
