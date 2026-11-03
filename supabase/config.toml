@@ -1,0 +1,21 @@
+project_id = "kevin-portfolio-local"
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+[db]
+port = 54322
+major_version = 15
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/admin/connexion"]
+enable_signup = false
+enable_anonymous_sign_ins = false
+[auth.email]
+# Keep email login available; global auth.enable_signup=false blocks public signup.
+enable_signup = true
+[storage]
+enabled = true
+file_size_limit = "20MiB"

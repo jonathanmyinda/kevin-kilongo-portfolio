@@ -36,3 +36,5 @@ __pycache__/
 /docs/content/step7-media-review.jpg
 /.vercel/
 /docs/content/portrait-originals/
+/supabase/.temp/
+/docs/admin-images-mobile.png

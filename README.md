@@ -90,7 +90,17 @@ python scripts/validate-reference-audit.py
 
 Les HTML et scripts SITE123 archivés sont exclus du lint et de la détection Tailwind : ils constituent des preuves, pas du code de l’application.
 
-## Formulaire de contact
+## Administration de développement
+
+Le premier parcours privé utilise Supabase DEV uniquement. Lancer interface et API
+avec `npm run dev:admin`, puis ouvrir `http://127.0.0.1:5173/admin`.
+Configuration, ouverture du premier compte et recette :
+[guide du parcours administrateur](docs/admin-dashboard-workflow.md).
+Import, validation et suppression des images : [guide des images](docs/admin-dashboard-images.md).
+Profil, services, portraits et PDF : [guide de gestion des contenus](docs/admin-dashboard-site.md).
+Le portfolio public conserve ses données actuelles.
+
+## Formulaire de contact (état actuel)
 
 Le formulaire est temporairement masqué ; son code est conservé et l’envoi reste
 désactivé. L’e-mail, le téléphone et WhatsApp restent visibles. Voir [la procédure](docs/contact-form.md) et
