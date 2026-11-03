@@ -1,6 +1,6 @@
 // Official Vercel CLI, pinned existing project. Values travel only through stdin.
 import {spawnSync} from 'node:child_process'
-import {mkdirSync,writeFileSync} from 'node:fs'
+import {mkdirSync,writeFileSync,readFileSync} from 'node:fs'
 import {createHash} from 'node:crypto'
 const cli=process.argv[2],action=process.argv[3]
 if(!cli)throw Error('Chemin de la CLI officielle requis')
@@ -26,4 +26,19 @@ if(action==='inspect'){
 }else if(action==='deployments'){
  const result=api('/v6/deployments?projectId='+project+'&limit=10')
  console.log(JSON.stringify(result.deployments.map(d=>({id:d.uid,url:d.url,state:d.state,target:d.target,sha:d.meta?.githubCommitSha,branch:d.meta?.githubCommitRef})),null,2))
+}else if(action==='verify'){
+ const baseline=JSON.parse(readFileSync('node_modules/.cache/admin-preview/production-baseline.local.json','utf8'))
+ const p=api('/v9/projects/'+project),env=api('/v9/projects/'+project+'/env').envs||[]
+ const production=env.filter(x=>x.target?.includes('production')).map(x=>({key:x.key,id:x.id,valueHash:createHash('sha256').update(x.value||'').digest('hex'),updatedAt:x.updatedAt})).sort((a,b)=>a.key.localeCompare(b.key))
+ if(JSON.stringify(production)!==JSON.stringify(baseline.production)||p.targets?.production?.id!==baseline.productionDeployment||p.link?.productionBranch!==baseline.productionBranch)throw Error('État de production différent du contrôle initial')
+ const dev=env.filter(x=>x.key.startsWith('SUPABASE_DEV_'))
+ if(dev.length!==6||dev.some(x=>x.gitBranch!==branch||JSON.stringify(x.target)!==JSON.stringify(['preview'])))throw Error('Périmètre des variables DEV incorrect')
+ console.log('Production et ses variables inchangées ; 6 paramètres DEV limités à Preview / '+branch)
+}else if(action==='logs'){
+ process.loadEnvFile('.env.supabase-dev.local')
+ const raw=run(['logs','--deployment',process.argv[4],'--environment','preview','--since','1h','--limit','200','--json'])
+ const sensitive=Object.entries(process.env).filter(([k,v])=>/KEY|TOKEN|PASSWORD|SECRET/.test(k)&&v?.length>12).some(([,v])=>raw.includes(v))
+ if(sensitive||/Texte privé non publié|portfolio_access=|portfolio_refresh=|"password"\s*:/.test(raw))throw Error('Journal potentiellement sensible : contrôler localement sans le publier')
+ const records=raw.split('\n').filter(Boolean).map(x=>{try{return JSON.parse(x)}catch{return {}}})
+ console.log(JSON.stringify({logRecords:records.length,sensitiveValueDetected:false,errorRecords:records.filter(x=>['error','fatal'].includes(x.level)||['error','fatal'].includes(x.log?.level)).length}))
 }else throw Error('Action inconnue')

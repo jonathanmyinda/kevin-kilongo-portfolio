@@ -98,6 +98,7 @@ Configuration, ouverture du premier compte et recette :
 [guide du parcours administrateur](docs/admin-dashboard-workflow.md).
 Import, validation et suppression des images : [guide des images](docs/admin-dashboard-images.md).
 Profil, services, portraits et PDF : [guide de gestion des contenus](docs/admin-dashboard-site.md).
+Déploiement et recette de la branche en Preview : [guide Vercel DEV](docs/admin-dashboard-preview.md).
 Le portfolio public conserve ses données actuelles.
 
 ## Formulaire de contact (état actuel)

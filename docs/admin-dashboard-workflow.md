@@ -240,5 +240,6 @@ donc pas prétendue validée. Aucun SMTP/MFA ou mécanisme de récupération con
 - [Supabase : fonctions PostgreSQL et droits](https://supabase.com/docs/guides/database/functions)
 - [Vercel : runtime Node.js](https://vercel.com/docs/functions/runtimes/node-js)
 
-Prochaine étape : ouvrir le compte humain autorisé, contrôler l'éditeur avec lui,
-puis préparer la gestion sécurisée des nouveaux médias et l'édition du profil.
+Suites réalisées après cette première recette : [images](admin-dashboard-images.md),
+[profil, services et PDF](admin-dashboard-site.md), puis
+[Preview Vercel DEV](admin-dashboard-preview.md). Le compte humain reste inchangé.

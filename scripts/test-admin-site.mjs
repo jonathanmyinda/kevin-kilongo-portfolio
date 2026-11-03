@@ -123,6 +123,10 @@ try{
  }
 }catch(error){console.log('Recette interrompue : '+error.message);throw error}finally{
  await new Promise(r=>server.close(r))
+ // A lost HTTP response may follow a committed publication. Reconcile by the
+ // disposable actor, never replay a publication and never adopt a human release.
+ for(const row of sql(`select id from portfolio.releases where created_by in(${users.length?users.map(u=>quote(u.id)).join(','):'null'});`))if(!releases.includes(row.id))releases.push(row.id)
+ persist()
  const ownReleases=releases.length?releases.map(quote).join(','):'null',ownSites=revisions.length?revisions.map(quote).join(','):'null',ownPDFs=pdfs.length?pdfs.map(p=>quote(p.id)).join(','):'null'
  sql(`begin;
  do $$ begin if (select active_release_id from portfolio.site_state) is distinct from ${baseline.active_release_id?quote(baseline.active_release_id)+'::uuid':'null::uuid'} and not exists(select 1 from portfolio.site_state where active_release_id in(${ownReleases})) then raise exception 'Publication tierce : arrêt'; end if; if (select revision_id from portfolio.site_workspace) is distinct from ${quote(baseline.workspace)}::uuid and not exists(select 1 from portfolio.site_workspace where revision_id in(${ownSites})) then raise exception 'Brouillon tiers : arrêt'; end if; end $$;

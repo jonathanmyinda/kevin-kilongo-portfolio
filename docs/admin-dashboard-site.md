@@ -76,7 +76,9 @@ Chaque import utilise un chemin aléatoire neuf ; aucun PDF publié n'est écras
 Les gros fichiers ne transitent pas dans une requête entrante Vercel (limite
 4,5 Mo). Les deux parseurs ne constituent pas un antivirus : cela reste une
 limite de cette version. Les modules natifs et le temps d'exécution sur Linux
-Vercel restent à vérifier lors d'une future étape de déploiement autorisée.
+Vercel ont ensuite été vérifiés dans la Preview décrite dans
+[le guide Vercel DEV](admin-dashboard-preview.md), avec le PDF réel de 32 pages.
+Aucun déploiement en production n'a été effectué.
 
 L'aperçu/téléchargement nécessite un administrateur. Il reçoit des liens signés
 **120 secondes**, jamais inclus dans la lecture publique des brouillons. Un lien
