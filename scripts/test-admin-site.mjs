@@ -11,6 +11,7 @@ import {verifyTarget,sql,quote} from './dev-tools.mjs'
 import {supabaseRequest} from '../server/admin/supabase.mjs'
 import {siteFields} from '../server/admin/site.mjs'
 import {createAdminHandler} from '../server/admin/handler.mjs'
+import {previewOrigin,previewHTTP} from './preview-http.mjs'
 verifyTarget()
 const run=randomUUID(),slug='site-fixture-'+run,users=[],pdfs=[],revisions=[],releases=[],uploads=[],checks=[]
 const key=process.env.SUPABASE_DEV_SECRET_KEY,manifest='node_modules/.cache/admin-workflow/site-'+run+'.local.json'
@@ -23,9 +24,9 @@ const server=createServer(createAdminHandler(async(path,options)=>{
  const result=await supabaseRequest(path,options)
  if(path==='/rest/v1/rpc/admin_save_site'&&result.status>=400)console.log('Diagnostic SQL de fixture : '+JSON.stringify({code:result.data?.code,message:result.data?.message}))
  return result
-}));await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`
+}));await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=previewOrigin||`http://127.0.0.1:${server.address().port}`
 let cookie='',projectId,firstSite,secondSite
-function api(action,body,id,jar=cookie){return new Promise((resolve,reject)=>{
+function api(action,body,id,jar=cookie){if(previewOrigin)return previewHTTP('/api/admin?action='+action+(id?'&id='+id:''),{method:body===undefined?'GET':'POST',headers:{Origin:origin,Cookie:jar,...(body===undefined?{}:{'Content-Type':'application/json'})},body:body===undefined?undefined:JSON.stringify(body)}).then(r=>{if(jar===cookie&&r.cookies.length)cookie=r.cookies.map(c=>c.split(';')[0]).join('; ');return r});return new Promise((resolve,reject)=>{
  const bytes=body===undefined?null:Buffer.from(JSON.stringify(body))
  const req=http(origin+'/api/admin?action='+action+(id?'&id='+id:''),{method:bytes?'POST':'GET',agent:false,headers:{Origin:origin,Cookie:jar,...(bytes?{'Content-Type':'application/json','Content-Length':bytes.length}:{})}},res=>{const chunks=[];res.on('data',b=>chunks.push(b));res.on('end',()=>{if(jar===cookie&&res.headers['set-cookie'])cookie=res.headers['set-cookie'].map(c=>c.split(';')[0]).join('; ');const raw=Buffer.concat(chunks);resolve({status:res.statusCode,data:res.headers['content-type']?.includes('application/json')?JSON.parse(raw.toString()):raw})})})
  req.setTimeout(120000,()=>req.destroy(Error('Délai API dépassé')));req.on('error',reject);if(bytes)req.write(bytes);req.end()

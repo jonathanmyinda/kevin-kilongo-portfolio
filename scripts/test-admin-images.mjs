@@ -8,6 +8,7 @@ import sharp from 'sharp'
 import { verifyTarget, sql, quote } from './dev-tools.mjs'
 import { supabaseRequest } from '../server/admin/supabase.mjs'
 import handler from '../server/admin/handler.mjs'
+import {previewOrigin,previewHTTP} from './preview-http.mjs'
 verifyTarget()
 const run = randomUUID(), slug = 'images-fixture-' + run, users = [], intents = [], releases = [], checks = []
 const key = process.env.SUPABASE_DEV_SECRET_KEY
@@ -17,9 +18,10 @@ const baseline = sql('select active_release_id,version from portfolio.site_state
 const manifest = 'node_modules/.cache/admin-workflow/images-' + run + '.local.json'
 const persist = () => writeFileSync(manifest, JSON.stringify({ run, slug, users: users.map(u => u.id), intents: intents.map(i => i.id), releases, checks }, null, 2))
 const server = createServer(handler); await new Promise(r => server.listen(0, '127.0.0.1', r))
-const origin = `http://127.0.0.1:${server.address().port}`
+const origin = previewOrigin || `http://127.0.0.1:${server.address().port}`
 let cookie = '', otherCookie = '', projectId, revisionId
 function api(action, body, id, jar = cookie) {
+  if(previewOrigin)return previewHTTP('/api/admin?action='+action+(id?'&id='+id:''),{method:body===undefined?'GET':'POST',headers:{Origin:origin,Cookie:jar,...(body===undefined?{}:{'Content-Type':'application/json'})},body:body===undefined?undefined:JSON.stringify(body)}).then(r=>{if(jar===cookie&&r.cookies.length)cookie=r.cookies.map(c=>c.split(';')[0]).join('; ');return r})
   return new Promise((resolve, reject) => {
     const bytes = body === undefined ? null : Buffer.from(JSON.stringify(body))
     const req = http(origin + '/api/admin?action=' + action + (id ? '&id=' + id : ''), { method: bytes ? 'POST' : 'GET', agent: false, headers: { Origin: origin, Cookie: jar, ...(bytes ? { 'Content-Type': 'application/json', 'Content-Length': bytes.length } : {}) } }, res => {
@@ -59,7 +61,8 @@ try {
   check('validation non administrateur refusée', (await api('image-finish', { id: randomUUID() }, undefined, otherCookie)).status === 403)
   check('fonction privilégiée inaccessible au JWT utilisateur', (await rpc('service_image_finish', { p_id: randomUUID(), p_actor: users[1].id, p_bytes: 100, p_width: 1, p_height: 1, p_sha: 'a'.repeat(64) }, signedOther.data.access_token)).status >= 400)
   assert.equal((await api('login', { email: users[0].email, password: users[0].password })).status, 200)
-  const png = await sharp({ create: { width: 160, height: 100, channels: 3, background: '#359c83' } }).png().toBuffer()
+  const png = previewOrigin ? await sharp(randomBytes(1400*1200*3),{raw:{width:1400,height:1200,channels:3}}).png({compressionLevel:0}).toBuffer() : await sharp({ create: { width: 160, height: 100, channels: 3, background: '#359c83' } }).png().toBuffer()
+  if(previewOrigin)check('image réelle dépassant 4,5 Mo pour transfert direct',png.length>4500000&&png.length<6*1024**2)
   check('écriture directe administrateur dans le bucket final refusée', (await supabaseRequest('/storage/v1/object/portfolio-private/uploads/' + users[0].id + '/' + randomUUID() + '.png', { method: 'POST', body: png, mime: 'image/png', token: cookie.match(/portfolio_access=([^;]+)/)[1] })).status >= 400)
   const jpeg = await sharp(png).jpeg().toBuffer()
   check('poids déclaré excessif refusé par API', (await api('image-begin', { name: 'large.png', mime: 'image/png', bytes: 6291457 })).status === 413)
