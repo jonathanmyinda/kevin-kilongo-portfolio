@@ -4,10 +4,7 @@ import { verifyTarget, sql, quote } from './dev-tools.mjs'
 verifyTarget()
 const media = JSON.parse(readFileSync('src/data/published-media.json', 'utf8'))
 const profile = JSON.parse(readFileSync('src/data/profile.json', 'utf8'))
-const home = readFileSync('src/sections/HomeSections.jsx', 'utf8')
-const subtitle = home.match(/className="hero-description">([^<]+)</)?.[1]
-const approach = home.match(/className="lead">([^<]+)</)?.[1]
-const presentation = home.match(/className="about-facts">([^<]+)</)?.[1]
+const {subtitle,approach,presentation} = JSON.parse(readFileSync('src/data/site-copy.json','utf8'))
 if (!subtitle || !approach || !presentation) throw Error('Textes actuels non extraits : aucun remplissage inventé')
 const current = sql('select revision_id from portfolio.site_workspace')[0]
 if (current.revision_id) { console.log('Brouillon de profil déjà présent, aucune modification.'); process.exit(0) }

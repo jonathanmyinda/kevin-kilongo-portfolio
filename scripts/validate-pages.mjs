@@ -19,8 +19,8 @@ try {
   const output = result.output.find((item) => item.type === 'chunk' && item.isEntry)
   const compiled = new URL('compiled.mjs', cache)
   await writeFile(compiled, output.code)
-  const { PortfolioRoutes, projects, featuredProjects, filters, filterProjects, contactLinks, profile, serviceImages, perspectives } = await import(compiled.href)
-  const render = (path) => renderToStaticMarkup(createElement(MemoryRouter, { initialEntries: [path] }, createElement(PortfolioRoutes)))
+  const { PortfolioRoutes, projects, featuredProjects, filters, filterProjects, contactLinks, profile, serviceImages, perspectives, services } = await import(compiled.href)
+  const render = (path) => renderToStaticMarkup(createElement(MemoryRouter, { initialEntries: [path] }, createElement(PortfolioRoutes,{initialContent:{projects,featuredProjects,profile,contactLinks,serviceImages,perspectives,services,pdfSize:`${(profile.portfolio.bytes/1e6).toFixed(2)} Mo`}})))
   const unescape = (text) => text.replaceAll('&amp;', '&').replaceAll('&#x27;', "'")
   const countCards = (html) => [...html.matchAll(/<article class="project-card/g)].length
   const checkPage = async (html) => {

@@ -13,7 +13,7 @@ export function cli(args) {
     const diagnostic=r.stdout+r.stderr
     // Retry only a failure BEFORE SQL is sent. Never replay a potentially
     // committed business mutation after an ambiguous response.
-    if(attempt<2&&/failed to initialise login role/.test(diagnostic)){Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,2000);continue}
+    if(attempt<2&&/failed to initialise login role|failed to connect as temp role/.test(diagnostic)){Atomics.wait(new Int32Array(new SharedArrayBuffer(4)),0,0,2000);continue}
     writeFileSync(`${dir}/failure.local.txt`,diagnostic);throw new Error('Commande DEV refusée. Diagnostic local privé : node_modules/.cache/admin-workflow/failure.local.txt')
   }
 }

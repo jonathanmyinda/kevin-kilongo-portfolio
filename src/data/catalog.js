@@ -2,9 +2,10 @@ import sourceProjects from './projects.json'
 import sourceProfile from './profile.json'
 import media from './published-media.json'
 import selection from './homepage-selection.json'
+import copy from './site-copy.json'
 
 export const projects = sourceProjects.map((project) => ({ ...project, ...media.projects[project.id] }))
-export const profile = { ...sourceProfile, portrait: media.portrait, heroPortrait: media.heroPortrait, socials: [
+export const profile = { ...sourceProfile, ...copy, portrait: media.portrait, heroPortrait: media.heroPortrait, socials: [
   { network: 'LinkedIn', url: 'https://www.linkedin.com/in/kevin-kilongo-778a543a0' },
   { network: 'Instagram', url: 'https://www.instagram.com/kilongokevin/' },
 ] }
@@ -35,3 +36,5 @@ export function periodOf(experience) {
   const format = (value) => new Intl.DateTimeFormat('fr-FR', { month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${value}-01T00:00:00Z`))
   return experience.end ? `${format(experience.start)} — ${format(experience.end)}` : format(experience.start)
 }
+
+export const services = copy.services.map(s=>({title:s.title,text:s.description,...(s.imageKey?{image:serviceImages[s.imageKey]}:{})}))

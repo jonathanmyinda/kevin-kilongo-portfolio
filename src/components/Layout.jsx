@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router'
-import { profile, pdfSize, contactLinks } from '../data/catalog'
+import {useContent} from '../data/content-context'
 import Arrow from './Arrow'
 import MotionEnhancements from './MotionEnhancements'
 
 export function DownloadLink({ className = 'text-link' }) {
+  const {profile,pdfSize}=useContent()
   return <a className={className} href={profile.portfolio.src} download={profile.portfolio.downloadName}>Télécharger le portfolio <span className="download-weight">PDF · {pdfSize}</span><Arrow direction="down" /></a>
 }
 
 function Header() {
+  const {profile,contactLinks}=useContent()
   const location = useLocation()
   const [openLocation, setOpenLocation] = useState(null)
   const open = openLocation === location.key
@@ -29,7 +31,7 @@ function Header() {
       if (event.key === 'Escape' && open) { close(); menuButton.current.focus() }
     }}>
       <div className="header-inner shell">
-        <Link to="/" className="identity" onClick={close} aria-label="Kevin Kilongo — accueil"><span>Kevin Kilongo<span className="identity-dot">.</span></span><span className="identity-subtitle">Architecte</span></Link>
+        <Link to="/" className="identity" onClick={close} aria-label={`${profile.name} — accueil`}><span>{profile.name.split(' ').slice(0,2).join(' ')}<span className="identity-dot">.</span></span><span className="identity-subtitle">{profile.profession}</span></Link>
         <button ref={menuButton} className="menu-toggle" type="button" aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}>{open ? 'Fermer' : 'Menu'}<span aria-hidden="true">{open ? '×' : '+'}</span></button>
         <nav id="main-navigation" className={open ? 'main-nav is-open' : 'main-nav'} inert={mobile && !open} aria-label="Navigation principale">
           <NavLink to="/projets" onClick={close}>Projets</NavLink>
@@ -63,6 +65,7 @@ function RouteFocus() {
 }
 
 export default function Layout() {
+  const {profile}=useContent()
   return <>
     <a href="#main-content" className="skip-link">Aller au contenu</a>
     <RouteFocus />
@@ -70,7 +73,7 @@ export default function Layout() {
     <Header />
     <Outlet />
     <footer className="site-footer shell">
-      <Link to="/" className="footer-name">Kevin Kilongo Munganga<span>Architecte · Kinshasa, RDC</span></Link>
+      <Link to="/" className="footer-name">{profile.name}<span>{profile.profession} · {profile.location}</span></Link>
       <DownloadLink />
       <span className="footer-note">Portfolio d’architecture</span>
     </footer>

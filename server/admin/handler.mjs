@@ -53,6 +53,7 @@ export function createAdminHandler(request = supabaseRequest) {
     try {
       const url = new URL(req.url, 'http://localhost'), action = url.searchParams.get('action') || 'session'
       const methods = { session: 'GET', projects: 'GET', preview: 'GET', media: 'GET', login: 'POST', logout: 'POST', save: 'POST', publish: 'POST', images: 'GET', 'image-begin': 'POST', 'image-finish': 'POST', 'image-delete': 'POST', 'image-cleanup': 'POST', site: 'GET', 'site-preview':'GET','site-save':'POST','site-publish':'POST','site-restore':'POST',pdfs:'GET','pdf-begin':'POST','pdf-finish':'POST','pdf-link':'POST','pdf-delete':'POST','pdf-cleanup':'POST' }
+      Object.assign(methods,{'project-history':'GET',unpublish:'POST','restore-project':'POST'})
       if (!methods[action]) throw new HttpError(404, 'Action inconnue.')
       if (req.method !== methods[action]) { res.setHeader('Allow', methods[action]); throw new HttpError(405, 'Méthode refusée.') }
       if (req.method === 'POST') {
@@ -94,6 +95,14 @@ export function createAdminHandler(request = supabaseRequest) {
       }
       if (!await rpc('admin_session', {}, token)) { cookies(res, null, secure); throw new HttpError(403, 'Accès réservé aux administrateurs autorisés.') }
       if (action === 'session') return reply(200, { email: user.data.email })
+      if(action==='project-history'){
+        const id=url.searchParams.get('id');if(!uuid(id))throw new HttpError(400,'Projet invalide.')
+        return reply(200,await rpc('admin_project_history',{p_project:id},token))
+      }
+      if(action==='unpublish'||action==='restore-project'){
+        if(!uuid(body.projectId)||!Number.isSafeInteger(body.expectedVersion)||body.expectedVersion<0||action==='restore-project'&&!uuid(body.revisionId))throw new HttpError(400,'Publication invalide.')
+        return reply(200,{releaseId:await rpc('admin_project_publication',{p_project:body.projectId,p_revision:action==='unpublish'?null:body.revisionId,p_expected:body.expectedVersion},token)})
+      }
       if (action === 'images' || action.startsWith('image-')) return reply(200, await imageAction({ action, body, token, actor: user.data.id, request, rpc }))
       if (action === 'pdfs' || action.startsWith('pdf-')) return reply(200, await pdfAction({ action,body,token,actor:user.data.id,request,rpc }))
       if (action === 'site') return reply(200,await rpc('admin_site',{},token))

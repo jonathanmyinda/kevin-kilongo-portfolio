@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Arrow from './Arrow'
+import MediaImage from './MediaImage'
 
 export default function Lightbox({ images, initialIndex, trigger, onClose }) {
   const dialog = useRef(null)
@@ -42,7 +43,7 @@ export default function Lightbox({ images, initialIndex, trigger, onClose }) {
         <button type="button" className="lightbox__close" onClick={requestClose} autoFocus>Fermer <span aria-hidden="true">×</span></button>
       </div>
       <figure className="lightbox__figure">
-        <div className="lightbox__image"><img key={image.src} src={image.src} alt={image.alt} width={image.width} height={image.height} style={{ maxWidth: `min(${image.width}px, 100%)`, maxHeight: `min(${image.height}px, 65dvh)` }} /></div>
+        <div className="lightbox__image"><MediaImage key={image.src} image={image} eager style={{ maxWidth: `min(${image.width}px, 100%)`, maxHeight: `min(${image.height}px, 65dvh)` }} /></div>
         <figcaption id="lightbox-caption">{image.alt}{image.credit && <span>Pour {image.credit}</span>}</figcaption>
       </figure>
       <div className="lightbox__controls">

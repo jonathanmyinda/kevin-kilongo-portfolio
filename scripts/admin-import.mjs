@@ -61,12 +61,10 @@ export async function prepareImport() {
   let siteId=null
   try {
     const hero=await image(media.heroPortrait),portrait=await image(media.portrait),pdf=await image({src:profile.portfolio.src},'pdf')
-    const servicesBlock=home.match(/const expertises = \[([\s\S]*?)\n\]/)?.[1]
-    if(!servicesBlock)throw new Error('Services à extraire manuellement : format source modifié')
-    const services=Array.from(servicesBlock.matchAll(/\{ title: '([^']*)', text: '([^']*)'(?:, imageKey: '([^']*)')? \}/g),m=>({title:m[1],description:m[2],imageKey:m[3]}))
-    if(services.length!==4)throw new Error('Quatre services attendus')
-    const lead=home.match(/<p className="lead">([^<]+)<\/p>/)?.[1],facts=home.match(/<p className="about-facts">([^<]+)<\/p>/)?.[1]
-    if(!lead||!facts)throw new Error('Présentation visible non extraite')
+    const copy=await load('src/data/site-copy.json')
+    const services=copy.services
+    const lead=copy.approach,facts=copy.presentation
+    if(services.length!==4||!lead||!facts)throw new Error('Copie statique incomplète')
     const internal={profile,homeSource:home,media,featured,notice:'Archives privées ; ne jamais retourner dans une réponse publique.'}
     siteId=uuid(JSON.stringify({internal,hero,portrait,pdf}))
     statements.push(insert('site_revisions',{id:siteId,name:profile.name,profession:profile.profession,location:profile.location,presentation:lead+'\n\n'+facts,

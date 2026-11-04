@@ -1,0 +1,27 @@
+{
+  "headline": "Architecture de sens, héritage en mouvement",
+  "signatureAbout": "Patrimoine & modernité : une même architecture",
+  "subtitle": "Je conçois des espaces, réalise des rendus 3D et accompagne le suivi des travaux.",
+  "approach": "Ancré à Kinshasa, je cherche un dialogue entre l’héritage des lieux et leurs usages à venir. La mémoire, les matériaux et la lumière nourrissent une démarche qui associe rigueur technique et créativité.",
+  "presentation": "Diplômé de l’ISAU en 2024, j’interviens en conception, coordination, visualisation et suivi de chantier. Ma formation en passation des marchés complète cette pratique par la gestion des appels d’offres et le suivi contractuel.",
+  "services": [
+    {
+      "title": "Conception architecturale",
+      "description": "Je prépare les études préliminaires et les plans d’avant-projet. J’organise les espaces, les volumes et la lumière en tenant compte des usages et des contraintes techniques."
+    },
+    {
+      "title": "Suivi de projet et coordination",
+      "description": "Je coordonne les échanges et le suivi des travaux. Je contrôle la conformité aux plans et aux spécifications, puis je rédige les rapports et les documents techniques.",
+      "imageKey": "suivi"
+    },
+    {
+      "title": "Conseil et faisabilité",
+      "description": "J’étudie la faisabilité et les choix techniques du projet. J’accompagne les décisions sur les matériaux, les orientations budgétaires et le phasage.",
+      "imageKey": "conseil"
+    },
+    {
+      "title": "Modélisation et visualisation 3D",
+      "description": "Je modélise les volumes et réalise des rendus 3D. Je travaille les matières, la lumière et la post-production pour présenter les espaces."
+    }
+  ]
+}
