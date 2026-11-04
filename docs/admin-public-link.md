@@ -133,3 +133,26 @@ L'option `--hold` conserve temporairement ses propres fixtures pour un contrôle
 son fichier de travail et ses identifiants fictifs sont ignorés et nettoyés ensuite.
 La recette restaure seulement son état initial et contrôle l'empreinte des contenus
 préexistants, y compris le test personnel. Le compte personnel n'est pas modifié.
+
+## Recette Vercel réellement exécutée
+
+Le commit fonctionnel `d3fa9a2` a été déployé automatiquement en Preview
+(`dpl_F5jwe2dLDFm6ECfsV6RLxBGSpA7c`). Les 24 contrôles de la recette
+`test-public-link.mjs` ont aussi réussi sur ce runtime Vercel, y compris les
+uploads directs, le refus Storage HTTP 413, la publication, la dépublication,
+la restauration et les conflits. Les fixtures ont été nettoyées et l'empreinte
+des contenus préexistants est identique après la recette.
+
+Les contrôles HTTP complémentaires valident l'accueil, /admin, le catalogue et
+une fiche en accès direct, noindex, les refus anonymes des API administratives,
+la séparation SPA/API et l'identité des bundles avec le build local sans clé
+privilégiée. La production, sa branche main et ses variables sont inchangées.
+
+Le navigateur local affiche les contenus publiés réels, sur ordinateur et à
+390 px (18 cartes, aucun débordement horizontal). Captures locales ignorées :
+`docs/admin-redesign-captures/public-linked-desktop.jpg` et
+`docs/admin-redesign-captures/public-linked-mobile.jpg`.
+Le navigateur distant atteint la connexion Vercel : sa protection est conservée.
+Le contrôle visuel distant et une nouvelle manipulation manuelle des imports
+dans l'interface restent à effectuer après connexion personnelle à Vercel ;
+les imports, aperçus et téléchargements ont été vérifiés par les API réelles.

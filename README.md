@@ -111,6 +111,10 @@ Aucun e-mail de test n’a été envoyé.
 
 ## Cache des dépendances en développement
 
+La liaison du portfolio en Preview avec les publications Supabase DEV et son
+retour explicite à la source statique sont décrits dans
+[docs/admin-public-link.md](docs/admin-public-link.md).
+
 Si le réseau du navigateur affiche `504 (Outdated Optimize Dep)` sur des modules
 `/node_modules/.vite/deps/`, arrêter le serveur Vite du projet puis le relancer :
 
