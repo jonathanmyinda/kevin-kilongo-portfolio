@@ -11,3 +11,6 @@
 .admin-shell .admin-project-card{display:flex;flex-direction:column}.admin-shell .admin-card-image{flex:none;width:100%}.admin-shell .admin-card-body{display:flex;flex-direction:column;flex:1}.admin-shell .admin-card-body h3{flex:1}
 
 .admin-shell .admin-topbar h1{font-size:14px;letter-spacing:0;font-weight:600}
+.admin-shell .admin-idle-dialog{position:fixed;inset:0;margin:auto;width:min(420px,calc(100% - 32px));padding:24px;border:1px solid var(--admin-line);border-radius:12px;background:white;color:var(--admin-ink)}
+.admin-shell .admin-idle-dialog::backdrop{background:rgb(20 37 32 / 65%)}
+.admin-shell .admin-idle-dialog p{margin:12px 0 18px}

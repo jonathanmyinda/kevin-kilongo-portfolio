@@ -3,7 +3,7 @@ import { devConfig } from './supabase.mjs'
 import { validatePDF, PDF_LIMIT } from './pdf-validation.mjs'
 import { SiteError } from './site.mjs'
 const uuid = id => typeof id === 'string' && /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(id)
-export async function pdfAction({ action,body,token,actor,request,rpc }) {
+export async function pdfAction({ action,body,token,actor,request,rpc,sessionExpiresAt }) {
   const key = process.env.SUPABASE_DEV_SECRET_KEY
   if (!key?.startsWith('sb_secret_')) throw new SiteError(503,'Service PDF non configuré côté serveur.')
   const service = async (operation,id=null,meta={}) => {
@@ -49,11 +49,13 @@ export async function pdfAction({ action,body,token,actor,request,rpc }) {
     if(!info)throw new SiteError(404,'PDF non validé, supprimé ou introuvable.')
     const filename=body.downloadName||'portfolio-kevin-kilongo-munganga.pdf'
     if(!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,100}\.pdf$/.test(filename))throw new SiteError(400,'Nom de téléchargement PDF invalide.')
-    const r=await request('/storage/v1/object/sign/portfolio-private/'+info.key,{method:'POST',key,body:{expiresIn:120}})
+    const expiresIn=Math.min(120,Math.floor((sessionExpiresAt-Date.now())/1000))
+    if(expiresIn<1)throw new SiteError(401,'Votre session a expiré.')
+    const r=await request('/storage/v1/object/sign/portfolio-private/'+info.key,{method:'POST',key,body:{expiresIn}})
     if(r.status>=300||!r.data?.signedURL)throw new SiteError(503,'Accès privé au PDF indisponible.')
     const url=safeURL(r.data.signedURL),download=new URL(url)
     download.searchParams.set('download',filename)
-    return {previewUrl:url.href,downloadUrl:download.href,bytes:info.bytes,pages:info.pages,expiresIn:120}
+    return {previewUrl:url.href,downloadUrl:download.href,bytes:info.bytes,pages:info.pages,expiresIn}
   }
   if(action==='pdf-delete'){
     if(body.confirm!==true)throw new SiteError(400,'Confirmation de suppression requise.')
