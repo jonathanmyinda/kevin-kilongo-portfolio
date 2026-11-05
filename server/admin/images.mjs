@@ -1,6 +1,6 @@
 import sharp from 'sharp'
 import { createHash } from 'node:crypto'
-import { devConfig } from './supabase.mjs'
+import { supabaseConfig, supabaseSecret } from './supabase.mjs'
 export const imageLimits = Object.freeze({ input: 6291456, output: 3145728, pixels: 20000000, side: 6000 })
 const types = { 'image/jpeg': 'jpeg', 'image/png': 'png', 'image/webp': 'webp' }
 function animatedContainer(bytes, format) {
@@ -41,7 +41,7 @@ export async function validateImage(bytes, mime, size) {
 }
 const validId = id => typeof id === 'string' && /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(id)
 export async function imageAction({ action, body, token, actor, request, rpc }) {
-  const key = process.env.SUPABASE_DEV_SECRET_KEY
+  const key = supabaseSecret()
   if (!key?.startsWith('sb_secret_')) throw new ImageError(503, 'Validation des images non configurée côté serveur.')
   const service = async (name, args) => {
     const r = await request('/rest/v1/rpc/' + name, { method: 'POST', key, body: { ...args, p_actor: actor } })
@@ -78,8 +78,8 @@ export async function imageAction({ action, body, token, actor, request, rpc }) 
     const i = await rpc('admin_begin_image', { p_name: body.name, p_mime: body.mime, p_bytes: body.bytes }, token)
     const signed = await request('/storage/v1/object/upload/sign/portfolio-incoming/' + i.incomingKey, { method: 'POST', key, body: {} })
     if (signed.status >= 300 || !signed.data?.url) throw new ImageError(503, 'Autorisation d’import indisponible. Réessayez.')
-    const url = new URL('/storage/v1' + signed.data.url, devConfig().url)
-    if (url.origin !== devConfig().url || !url.pathname.includes('/portfolio-incoming/' + i.incomingKey)) throw new ImageError(503, 'Autorisation invalide.')
+    const url = new URL('/storage/v1' + signed.data.url, supabaseConfig().url)
+    if (url.origin !== supabaseConfig().url || !url.pathname.includes('/portfolio-incoming/' + i.incomingKey)) throw new ImageError(503, 'Autorisation invalide.')
     return { id: i.id, uploadUrl: url.href }
   }
   if (action === 'image-cleanup') {

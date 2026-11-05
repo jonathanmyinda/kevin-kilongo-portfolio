@@ -1,10 +1,10 @@
 import { createHash } from 'node:crypto'
-import { devConfig } from './supabase.mjs'
+import { supabaseConfig, supabaseSecret } from './supabase.mjs'
 import { validatePDF, PDF_LIMIT } from './pdf-validation.mjs'
 import { SiteError } from './site.mjs'
 const uuid = id => typeof id === 'string' && /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(id)
 export async function pdfAction({ action,body,token,actor,request,rpc,sessionExpiresAt }) {
-  const key = process.env.SUPABASE_DEV_SECRET_KEY
+  const key = supabaseSecret()
   if (!key?.startsWith('sb_secret_')) throw new SiteError(503,'Service PDF non configuré côté serveur.')
   const service = async (operation,id=null,meta={}) => {
     const r = await request('/rest/v1/rpc/service_pdf',{method:'POST',key,body:{p_action:operation,p_id:id,p_actor:actor,p_meta:meta}})
@@ -16,8 +16,8 @@ export async function pdfAction({ action,body,token,actor,request,rpc,sessionExp
     return r.data
   }
   const safeURL = path => {
-    const url=new URL(path.startsWith('/object/')?'/storage/v1'+path:path,devConfig().url)
-    if(url.origin!==devConfig().url)throw new SiteError(503,'Adresse de stockage invalide.')
+    const url=new URL(path.startsWith('/object/')?'/storage/v1'+path:path,supabaseConfig().url)
+    if(url.origin!==supabaseConfig().url)throw new SiteError(503,'Adresse de stockage invalide.')
     return url
   }
   const remove = async(bucket,path)=>{
@@ -36,7 +36,7 @@ export async function pdfAction({ action,body,token,actor,request,rpc,sessionExp
     if(signed.status>=300||!signed.data?.url)throw new SiteError(503,'Autorisation de transfert PDF indisponible.')
     const signedURL=safeURL(signed.data.url),signature=signedURL.searchParams.get('token')
     if(!signature||!signedURL.pathname.endsWith('/portfolio-pdf-incoming/'+i.incomingKey))throw new SiteError(503,'Autorisation PDF invalide.')
-    return {id:i.id,endpoint:devConfig().url.replace('.supabase.co','.storage.supabase.co')+'/storage/v1/upload/resumable/sign',signature,publishableKey:devConfig().key,bucket:'portfolio-pdf-incoming',objectKey:i.incomingKey}
+    return {id:i.id,endpoint:supabaseConfig().url.replace('.supabase.co','.storage.supabase.co')+'/storage/v1/upload/resumable/sign',signature,publishableKey:supabaseConfig().key,bucket:'portfolio-pdf-incoming',objectKey:i.incomingKey}
   }
   if(action==='pdf-cleanup'){
     const entries=await service('cleanup');let cleaned=0

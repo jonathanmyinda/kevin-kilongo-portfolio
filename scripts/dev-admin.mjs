@@ -1,10 +1,14 @@
 import { createServer } from 'vite'
-import { devConfig } from '../server/admin/supabase.mjs'
+import { supabaseConfig } from '../server/admin/supabase.mjs'
 import handler from '../server/admin/handler.mjs'
 import publicHandler from '../server/content/public.mjs'
-process.loadEnvFile('.env.supabase-dev.local')
-devConfig()
-const server = await createServer({ server: { host: '127.0.0.1', port: 5173, strictPort: true }, plugins: [{
+const target = process.argv.includes('--prod') ? 'prod' : 'dev'
+process.loadEnvFile(`.env.supabase-${target}.local`)
+process.env.SUPABASE_TARGET = target
+supabaseConfig()
+const port = target === 'prod' ? 5174 : 5173
+process.env.ADMIN_ORIGIN = `http://127.0.0.1:${port}`
+const server = await createServer({ server: { host: '127.0.0.1', port, strictPort: true }, plugins: [{
   name: 'local-admin-api', configureServer(vite) {
     vite.middlewares.use((req, res, next) => {
       if (new URL(req.url, 'http://localhost').pathname === '/api/admin') void handler(req, res)
@@ -14,4 +18,4 @@ const server = await createServer({ server: { host: '127.0.0.1', port: 5173, str
   },
 }] })
 await server.listen(); server.printUrls()
-console.log('Administration DEV : http://127.0.0.1:5173/admin')
+console.log(`Administration ${target.toUpperCase()} : http://127.0.0.1:${port}/admin`)
