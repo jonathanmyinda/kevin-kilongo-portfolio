@@ -89,8 +89,13 @@ export function createPublicHandler(request=supabaseRequest){return async(req,re
   if(latest?.version!==snapshot.version)return send(409,{source,error:'La publication change. Réessayez.'})
   return send(200,{source,version:snapshot.version,content,refreshAfter:30})
  }catch{
-  if(isProdDiagnostic())console.error(JSON.stringify({stage,status,code}))
-  return send(503,{source,error:'Le portfolio est temporairement indisponible. Réessayez dans un instant.'})
+  const diagnostic={stage,status,code}
+  if(isProdDiagnostic())console.error(JSON.stringify(diagnostic))
+  const showDiagnostic=isProdDiagnostic() && !isMedia &&
+   url.searchParams.get('runtime-check')==='error' &&
+   req.headers.host==='kevin-kilongo-portfolio-git-di-0749e1-jonathan-myindas-projects.vercel.app'
+  return send(503,{source,error:'Le portfolio est temporairement indisponible. Réessayez dans un instant.',
+   ...(showDiagnostic?{diagnostic}:{})})
  }
 }}
 export default createPublicHandler()
