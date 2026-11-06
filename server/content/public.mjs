@@ -90,7 +90,18 @@ export function createPublicHandler(request=supabaseRequest){return async(req,re
   return send(200,{source,version:snapshot.version,content,refreshAfter:30})
  }catch{
   const diagnostic={stage,status,code}
-  if(isProdDiagnostic())console.error(JSON.stringify(diagnostic))
+  if(isProdDiagnostic() && stage==='configuration'){
+   const {SUPABASE_PROD_PROJECT_REF:ref,SUPABASE_PROD_URL:url,
+    SUPABASE_PROD_PUBLISHABLE_KEY:publishable,SUPABASE_PROD_SECRET_KEY:secret}=process.env
+   diagnostic.checks={
+    referenceMatches:ref==='igszufhkxbrijrhrgbab',
+    urlMatches:url==='https://igszufhkxbrijrhrgbab.supabase.co',
+    publishablePrefixMatches:publishable?.startsWith('sb_publishable_')===true,
+    secretPrefixMatches:secret?.startsWith('sb_secret_')===true,
+    hasOuterWhitespace:[ref,url,publishable,secret].some(value=>value!==undefined&&value!==value.trim()),
+   }
+   console.error(JSON.stringify(diagnostic.checks))
+  }else if(isProdDiagnostic())console.error(JSON.stringify(diagnostic))
   const showDiagnostic=isProdDiagnostic() && !isMedia &&
    url.searchParams.get('runtime-check')==='error' &&
    req.headers.host==='kevin-kilongo-portfolio-git-di-0749e1-jonathan-myindas-projects.vercel.app'
