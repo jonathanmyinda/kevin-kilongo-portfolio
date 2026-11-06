@@ -1,6 +1,10 @@
 import https from 'node:https'
 
 export const DEV_REF = 'pahbwurduwagdglpslos'
+export function isProdDiagnostic(env = process.env) {
+  return env.VERCEL_ENV === 'preview' && env.VERCEL_GIT_COMMIT_REF === 'diag/supabase-prod-503' &&
+    env.PORTFOLIO_PROD_DIAGNOSTIC === '1'
+}
 export function devConfig(env = process.env) {
   if (env.SUPABASE_DEV_PROJECT_REF !== DEV_REF || env.SUPABASE_DEV_PROJECT_NAME !== 'kevin-portfolio-dev' || env.SUPABASE_DEV_REGION !== 'eu-west-1' || env.SUPABASE_DEV_URL !== `https://${DEV_REF}.supabase.co`) throw new Error('Configuration Supabase DEV non vérifiée')
   if (!env.SUPABASE_DEV_PUBLISHABLE_KEY) throw new Error('Clé publique DEV manquante')
@@ -11,10 +15,11 @@ export function supabaseConfig(env = process.env) {
   if (env.SUPABASE_TARGET === 'prod') {
     if (env.VERCEL_ENV && !(
       env.VERCEL_ENV === 'preview' && env.VERCEL_GIT_COMMIT_REF === 'feat/admin-dashboard' ||
-      env.VERCEL_ENV === 'production' && env.VERCEL_GIT_COMMIT_REF === 'main'
+      env.VERCEL_ENV === 'production' && env.VERCEL_GIT_COMMIT_REF === 'main' || isProdDiagnostic(env)
     )) throw new Error('Branche Supabase PROD non autorisée')
     const ref = env.SUPABASE_PROD_PROJECT_REF
     const url = env.SUPABASE_PROD_URL
+    if (isProdDiagnostic(env) && ref !== 'igszufhkxbrijrhrgbab') throw new Error('Cible de diagnostic invalide')
     if (!/^[a-z0-9]{20}$/.test(ref ?? '') || ref === DEV_REF || url !== `https://${ref}.supabase.co`) {
       throw new Error('Référence Supabase PROD non vérifiée')
     }

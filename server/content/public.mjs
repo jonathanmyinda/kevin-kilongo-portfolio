@@ -1,8 +1,8 @@
 import media from '../../src/data/published-media.json' with {type:'json'}
-import {supabaseConfig,supabaseRequest,supabaseSecret} from '../admin/supabase.mjs'
+import {isProdDiagnostic,supabaseConfig,supabaseRequest,supabaseSecret} from '../admin/supabase.mjs'
 export function dynamicPreview(env=process.env){
  const rehearsal = env.VERCEL_ENV==='preview'&&env.VERCEL_GIT_COMMIT_REF==='feat/admin-dashboard'||!env.VERCEL_ENV&&env.NODE_ENV!=='production'
- if(env.SUPABASE_TARGET==='prod') return env.PORTFOLIO_CONTENT_SOURCE==='supabase-prod'&&(rehearsal||env.VERCEL_ENV==='production'&&env.VERCEL_GIT_COMMIT_REF==='main')
+ if(env.SUPABASE_TARGET==='prod') return env.PORTFOLIO_CONTENT_SOURCE==='supabase-prod'&&(rehearsal||isProdDiagnostic(env)||env.VERCEL_ENV==='production'&&env.VERCEL_GIT_COMMIT_REF==='main')
  return env.PORTFOLIO_CONTENT_SOURCE==='supabase-dev'&&rehearsal
 }
 export const fileURL=id=>'/api/media?id='+encodeURIComponent(id)
@@ -35,8 +35,22 @@ export function createPublicHandler(request=supabaseRequest){return async(req,re
  const url=new URL(req.url,'http://localhost'),isMedia=url.pathname==='/api/media'
  if(!dynamicPreview())return isMedia?send(404,{error:'Média introuvable.'}):send(200,{source:'static'})
  const source=process.env.PORTFOLIO_CONTENT_SOURCE
- const rpc=async(name,body={},server=false)=>{const r=await request('/rest/v1/rpc/'+name,{method:'POST',body,...(server?{key:supabaseSecret()}:{})});if(r.status!==200)throw Error('Lecture indisponible');return r.data}
+ let stage='configuration', status, code
+ const rpc=async(name,body={},server=false)=>{
+  stage=server?'configuration':name
+  status=undefined
+  code=undefined
+  const options={method:'POST',body,...(server?{key:supabaseSecret()}:{})}
+  stage=name
+  const r=await request('/rest/v1/rpc/'+name,options)
+  status=r.status
+  const upstreamCode=r.data?.code ?? r.data?.error_code
+  if(typeof upstreamCode==='string' && /^[A-Za-z0-9_]{1,40}$/.test(upstreamCode))code=upstreamCode
+  if(status!==200)throw Error('Lecture indisponible')
+  return r.data
+ }
  try{
+  if(request===supabaseRequest)supabaseConfig()
   if(isMedia){
    const id=url.searchParams.get('id');if(!/^[a-f0-9-]{36}$/i.test(id||''))return send(404,{error:'Média introuvable.'})
    const key=await rpc('published_media_key',{p_media:id},true);if(!key)return send(404,{error:'Média introuvable.'})
@@ -53,9 +67,16 @@ export function createPublicHandler(request=supabaseRequest){return async(req,re
    res.statusCode=307;res.setHeader('Location',target.href);return res.end()
   }
   const snapshot=await rpc('read_portfolio');if(!snapshot)return send(200,{source,version:0,content:null})
-  const files=await rpc('published_files',{},true),content=publicView(snapshot,files),latest=await rpc('read_portfolio')
+  const files=await rpc('published_files',{},true)
+  stage='response'
+  status=undefined
+  code=undefined
+  const content=publicView(snapshot,files),latest=await rpc('read_portfolio')
   if(latest?.version!==snapshot.version)return send(409,{source,error:'La publication change. Réessayez.'})
   return send(200,{source,version:snapshot.version,content,refreshAfter:30})
- }catch{return send(503,{source,error:'Le portfolio est temporairement indisponible. Réessayez dans un instant.'})}
+ }catch{
+  if(isProdDiagnostic())console.error(JSON.stringify({stage,status,code}))
+  return send(503,{source,error:'Le portfolio est temporairement indisponible. Réessayez dans un instant.'})
+ }
 }}
 export default createPublicHandler()
