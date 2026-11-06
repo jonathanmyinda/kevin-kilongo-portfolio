@@ -33,6 +33,20 @@ export function createPublicHandler(request=supabaseRequest){return async(req,re
  const send=(status,data)=>{res.statusCode=status;res.setHeader('Content-Type','application/json; charset=utf-8');res.end(JSON.stringify(data))}
  if(req.method!=='GET'){res.setHeader('Allow','GET');return send(405,{error:'Méthode refusée.'})}
  const url=new URL(req.url,'http://localhost'),isMedia=url.pathname==='/api/media'
+ if(!isMedia && url.searchParams.get('runtime-check')==='1' &&
+    req.headers.host==='kevin-kilongo-portfolio-git-di-0749e1-jonathan-myindas-projects.vercel.app'){
+  const env=process.env
+  const setting=(value,allowed)=>value===undefined?'missing':allowed.includes(value)?value:'unexpected'
+  return send(200,{
+   environment:setting(env.VERCEL_ENV,['preview','production']),
+   branch:setting(env.VERCEL_GIT_COMMIT_REF,['diag/supabase-prod-503','main']),
+   diagnostic:setting(env.PORTFOLIO_PROD_DIAGNOSTIC,['1','0']),
+   source:setting(env.PORTFOLIO_CONTENT_SOURCE,['static','supabase-prod','supabase-dev']),
+   target:setting(env.SUPABASE_TARGET,['prod','dev']),
+   publishableKeyPresent:Boolean(env.SUPABASE_PROD_PUBLISHABLE_KEY),
+   secretKeyPresent:Boolean(env.SUPABASE_PROD_SECRET_KEY),
+  })
+ }
  if(!dynamicPreview())return isMedia?send(404,{error:'Média introuvable.'}):send(200,{source:'static'})
  const source=process.env.PORTFOLIO_CONTENT_SOURCE
  let stage='configuration', status, code
